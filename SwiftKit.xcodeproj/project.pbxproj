@@ -10,6 +10,8 @@
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 		52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
 		52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
+		52FDA7591B0E97E000C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7581B0E97E000C9C808 /* EnumIterator.swift */; };
+		52FDA75A1B0E97E000C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7581B0E97E000C9C808 /* EnumIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FDA7531B0E946B00C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FDA7551B0E95AD00C9C808 /* Repeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
+		52FDA7581B0E97E000C9C808 /* EnumIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumIterator.swift; path = EnumIterator/EnumIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		52FDA74F1B0E945300C9C808 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				52FDA7581B0E97E000C9C808 /* EnumIterator.swift */,
 				52FDA7551B0E95AD00C9C808 /* Repeat.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
@@ -190,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDA7591B0E97E000C9C808 /* EnumIterator.swift in Sources */,
 				52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDA75A1B0E97E000C9C808 /* EnumIterator.swift in Sources */,
 				52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +397,7 @@
 				52FDA7401B0E916700C9C808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52FDA7411B0E916700C9C808 /* Build configuration list for PBXNativeTarget "SwiftKitTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +406,7 @@
 				52FDA7431B0E916700C9C808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

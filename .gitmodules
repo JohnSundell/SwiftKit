@@ -1,0 +1,3 @@
+[submodule "Source/EnumIterator"]
+	path = Source/EnumIterator
+	url = git@github.com:JohnSundell/EnumIterator.git
