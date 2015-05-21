@@ -6,13 +6,9 @@ public struct EnumMap<K: IterableEnum, V> {
     
     /// Initialize an instance of this struct with a closure resolving an enum case into a value
     public init(valueResolver: K -> V) {
-        var values = [V]()
-        
-        EnumIterator<K>.iterate() {
-            values.append(valueResolver($0))
+        self.values = EnumIterator<K>.map() {
+            return valueResolver($0)
         }
-        
-        self.values = values
     }
     
     /// Subscript support
