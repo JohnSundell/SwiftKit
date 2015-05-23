@@ -34,10 +34,6 @@ extension Int: Number {
         self.init(number.toDouble())
     }
     
-    public init(double: Double) {
-        self.init(double)
-    }
-    
     public func toDouble() -> Double {
         return Double(self)
     }
