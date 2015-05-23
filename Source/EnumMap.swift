@@ -2,7 +2,7 @@ import Foundation
 
 /// A collection of values, each associated with a case of an enum
 public struct EnumMap<K: IterableEnum, V> {
-    private var values: [V]
+    public private(set) var values: [V]
     
     /// Initialize an instance of this struct with a closure resolving an enum case into a value
     public init(valueResolver: K -> V) {
