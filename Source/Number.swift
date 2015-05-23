@@ -1,7 +1,7 @@
 import Foundation
 import CoreGraphics
 
-/// Protocol that may be used to constraint a generic to numeric types
+/// Protocol that may be used to constrain a generic to numeric types
 public protocol Number {
     /// Initialize an instance with another Number
     init(_ number: Number)
