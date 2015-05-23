@@ -13,13 +13,13 @@ public struct EnumMap<K: IterableEnum, V> {
     
     /// Subscript support
     public subscript(key: K) -> V {
-        return self.values[key.rawValue]
+        return self.values[Int(key.rawValue)]
     }
     
     /// Run a closure on each value of this map
     public func forEach(closure: (K, V) -> Void) {
         for i in 0..<self.values.count {
-            closure(K(rawValue: i)!, self.values[i])
+            closure(K(rawValue: K.RawType(i))!, self.values[i])
         }
     }
 }

@@ -10,12 +10,12 @@
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 		52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
 		52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
-		52FDA7591B0E97E000C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7581B0E97E000C9C808 /* EnumIterator.swift */; };
-		52FDA75A1B0E97E000C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7581B0E97E000C9C808 /* EnumIterator.swift */; };
 		52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA75B1B0E987800C9C808 /* EnumMap.swift */; };
 		52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA75B1B0E987800C9C808 /* EnumMap.swift */; };
 		52FDA7651B1098CA00C9C808 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7641B1098CA00C9C808 /* Number.swift */; };
 		52FDA7661B1098CA00C9C808 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7641B1098CA00C9C808 /* Number.swift */; };
+		52FDA76B1B10A5AC00C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */; };
+		52FDA76C1B10A5AC00C9C808 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +34,9 @@
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FDA7531B0E946B00C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FDA7551B0E95AD00C9C808 /* Repeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
-		52FDA7581B0E97E000C9C808 /* EnumIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumIterator.swift; path = EnumIterator/EnumIterator.swift; sourceTree = "<group>"; };
 		52FDA75B1B0E987800C9C808 /* EnumMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMap.swift; sourceTree = "<group>"; };
 		52FDA7641B1098CA00C9C808 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		52FDA74F1B0E945300C9C808 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				52FDA7581B0E97E000C9C808 /* EnumIterator.swift */,
+				52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */,
 				52FDA75B1B0E987800C9C808 /* EnumMap.swift */,
 				52FDA7551B0E95AD00C9C808 /* Repeat.swift */,
 				52FDA7641B1098CA00C9C808 /* Number.swift */,
@@ -202,8 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDA76B1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				52FDA7651B1098CA00C9C808 /* Number.swift in Sources */,
-				52FDA7591B0E97E000C9C808 /* EnumIterator.swift in Sources */,
 				52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */,
 			);
@@ -213,8 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FDA76C1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				52FDA7661B1098CA00C9C808 /* Number.swift in Sources */,
-				52FDA75A1B0E97E000C9C808 /* EnumIterator.swift in Sources */,
 				52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */,
 			);
