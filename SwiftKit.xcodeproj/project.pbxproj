@@ -12,6 +12,10 @@
 		528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
 		52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
 		52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
+		52C834F91B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
+		52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
+		52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
+		52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 		52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
 		52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
@@ -37,6 +41,8 @@
 		528CE0D11B210E5E00AC1220 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
 		52C834BD1B139B6400174E9B /* EnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypes.swift; sourceTree = "<group>"; };
+		52C834F81B13C7F500174E9B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +97,9 @@
 				52C834BD1B139B6400174E9B /* EnumTypes.swift */,
 				52FDA75B1B0E987800C9C808 /* EnumMap.swift */,
 				52FDA7551B0E95AD00C9C808 /* Repeat.swift */,
+				52C834F81B13C7F500174E9B /* Calculate.swift */,
 				52FDA7641B1098CA00C9C808 /* Number.swift */,
+				52C834FE1B13DCBC00174E9B /* Unwrap.swift */,
 				528CE0D11B210E5E00AC1220 /* Unbox.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
@@ -213,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
+				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
 				52FDA76B1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */,
 				52FDA7651B1098CA00C9C808 /* Number.swift in Sources */,
@@ -226,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */,
+				52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */,
 				52FDA76C1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
