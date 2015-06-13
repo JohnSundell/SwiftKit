@@ -11,9 +11,21 @@ public struct EnumMap<K: IterableEnum, V> {
         }
     }
     
+    /// Initialize an empty instance of this struct with a default value that will be set for all enum members
+    public init(defaultValue: V) {
+        self.init(valueResolver: { K in
+            return defaultValue
+        })
+    }
+    
     /// Subscript support
     public subscript(key: K) -> V {
-        return self.values[Int(key.rawValue)]
+        get {
+            return self.values[Int(key.rawValue)]
+        }
+        set {
+            self.values[Int(key.rawValue)] = newValue
+        }
     }
     
     /// Run a closure on each value of this map
