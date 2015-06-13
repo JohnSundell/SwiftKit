@@ -7,7 +7,7 @@ import Foundation
  *  @param closure The closure to repeat
  */
 public func Repeat(numberOfTimes: Int, closure: () -> Void) {
-    for index in 0..<numberOfTimes {
+    for _ in 0..<numberOfTimes {
         closure()
     }
 }
