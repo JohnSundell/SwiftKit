@@ -16,6 +16,11 @@ public func +<T: Number>(lhs: T, rhs: T) -> T {
     return T(lhs.toDouble() + rhs.toDouble())
 }
 
+/// Multiplication support for Number types
+public func *<T: Number>(lhs: T, rhs: T) -> T {
+    return T(lhs.toDouble() * rhs.toDouble())
+}
+
 /// Postfix increment support for Number types
 public postfix func ++<T: Number>(inout number: T) -> T {
     number = T(number.toDouble() + 1)
