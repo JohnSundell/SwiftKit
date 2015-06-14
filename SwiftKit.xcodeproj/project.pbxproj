@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
+		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
 		528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D31B210E6500AC1220 /* UnboxTests.swift */; };
 		528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528CE0D11B210E5E00AC1220 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
 		52C834BD1B139B6400174E9B /* EnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypes.swift; sourceTree = "<group>"; };
@@ -72,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5276658E1B2DECEC00DBDC11 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		52FDA71E1B0E916700C9C808 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +104,7 @@
 		52FDA74F1B0E945300C9C808 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5276658E1B2DECEC00DBDC11 /* iOS */,
 				52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */,
 				52C834BD1B139B6400174E9B /* EnumTypes.swift */,
 				52FDA75B1B0E987800C9C808 /* EnumMap.swift */,
@@ -229,6 +241,7 @@
 				52FDA7651B1098CA00C9C808 /* Number.swift in Sources */,
 				52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */,
+				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +252,7 @@
 				52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */,
+				527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				52FDA76C1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
