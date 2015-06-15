@@ -1,7 +1,7 @@
 import Foundation
 
 /// A collection of values, each associated with a case of an enum
-public struct EnumMap<K: IterableEnum, V> {
+public struct EnumMap<K: RawRepresentable, V where K.RawValue: Number> {
     public private(set) var values: [V]
     
     /// Initialize an instance of this struct with a closure resolving an enum case into a value
@@ -12,7 +12,7 @@ public struct EnumMap<K: IterableEnum, V> {
     }
     
     /// Initialize an empty instance of this struct with a default value that will be set for all enum members
-    public init(defaultValue: V) {
+    public init(_ defaultValue: V) {
         self.init(valueResolver: { K in
             return defaultValue
         })
@@ -31,7 +31,7 @@ public struct EnumMap<K: IterableEnum, V> {
     /// Run a closure on each value of this map
     public func forEach(closure: (K, V) -> Void) {
         for i in 0..<self.values.count {
-            closure(K(rawValue: K.RawType(i))!, self.values[i])
+            closure(K(rawValue: K.RawValue(i))!, self.values[i])
         }
     }
 }

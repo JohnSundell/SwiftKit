@@ -1,15 +1,5 @@
 import Foundation
 
-/// Protocol for enums that are iterable. The easiest way to conform to this protocol is to make the enum inherit from a Number type
-public protocol IterableEnum {
-    typealias RawType: Number
-    
-    /// The raw value of the enum case
-    var rawValue: RawType { get }
-    /// Initialize a case of this enum with a raw value
-    init?(rawValue: RawType)
-}
-
 /**
  *  Class for iterating through each member of an Int-based enum
  *
@@ -19,7 +9,7 @@ public protocol IterableEnum {
  *      doSomething($0)
  *  }
  */
-public class EnumIterator<T: IterableEnum> {
+public class EnumIterator<T: RawRepresentable where T.RawValue: Number> {
     /**
      *   Iterate through each member of the enum that this class is for, and execute a closure for each one
      *
@@ -43,13 +33,13 @@ public class EnumIterator<T: IterableEnum> {
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member.
      */
-    public class func iterateWithSequenceOverride(sequenceOverride: T.RawType -> T?, forEachCase: T -> Void) {
-        var currentRawValue = T.RawType(0)
+    public class func iterateWithSequenceOverride(sequenceOverride: T.RawValue -> T?, forEachCase: T -> Void) {
+        var currentRawValue = T.RawValue(0)
         
         while true {
             if let enumCase = sequenceOverride(currentRawValue) {
                 forEachCase(enumCase)
-                currentRawValue = enumCase.rawValue + T.RawType(0)
+                currentRawValue = enumCase.rawValue + T.RawValue(0)
                 continue
             } else if let enumCase = T(rawValue: currentRawValue) {
                 forEachCase(enumCase)
