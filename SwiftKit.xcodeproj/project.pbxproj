@@ -20,6 +20,9 @@
 		52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
 		52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
 		52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
+		52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
+		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
+		52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 		52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
 		52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
@@ -49,6 +52,8 @@
 		52C834BD1B139B6400174E9B /* EnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypes.swift; sourceTree = "<group>"; };
 		52C834F81B13C7F500174E9B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
+		52DF8F251B2F8106004CB8C0 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 				52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */,
 				52C834BD1B139B6400174E9B /* EnumTypes.swift */,
 				52FDA75B1B0E987800C9C808 /* EnumMap.swift */,
+				52DF8F251B2F8106004CB8C0 /* Identifier.swift */,
 				52FDA7551B0E95AD00C9C808 /* Repeat.swift */,
 				52C834F81B13C7F500174E9B /* Calculate.swift */,
 				523C09AC1B543521004511B0 /* Quantifiable.swift */,
@@ -125,6 +131,7 @@
 		52FDA7521B0E946B00C9C808 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */,
 				528CE0D31B210E6500AC1220 /* UnboxTests.swift */,
 				52FDA7531B0E946B00C9C808 /* Info.plist */,
 			);
@@ -244,6 +251,7 @@
 				52FDA76B1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */,
 				52FDA7651B1098CA00C9C808 /* Number.swift in Sources */,
+				52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */,
 				52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
@@ -262,8 +270,10 @@
 				523C09AE1B543564004511B0 /* Quantifiable.swift in Sources */,
 				528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
+				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
 				52FDA7661B1098CA00C9C808 /* Number.swift in Sources */,
 				52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */,
+				52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */,
 				52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
