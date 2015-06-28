@@ -44,6 +44,17 @@ extension Int: Number {
     }
 }
 
+/// Extension that makes UInt conform to Number
+extension UInt: Number {
+    public init(_ number: Number) {
+        self.init(number.toDouble())
+    }
+    
+    public func toDouble() -> Double {
+        return Double(self)
+    }
+}
+
 /// Extension that makes UInt32 conform to Number
 extension UInt32: Number {
     public init(_ number: Number) {
