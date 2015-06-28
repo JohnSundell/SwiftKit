@@ -9,7 +9,7 @@ import Foundation
  *      doSomething($0)
  *  }
  */
-public class EnumIterator<T: RawRepresentable where T.RawValue: Number> {
+public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hashable> {
     /**
      *   Iterate through each member of the enum that this class is for, and execute a closure for each one
      *
@@ -19,7 +19,33 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number> {
     public class func iterate(forEachCase: T -> Void) {
         self.iterateWithSequenceOverride({ Int in
             return nil
-        }, forEachCase: forEachCase)
+        }, forEachCase: {
+            forEachCase($0)
+            return true
+        })
+    }
+    
+    /**
+     *  Iterate through each member of the enum that this class is for, and execute a closure for each one,
+     *  allowing the iteration to be cancelled at any time using a cancellation handler.
+     *
+     *  @param forEachCase A closure to execute on each member of the enum. The first parameter sent to the
+     *  closure will be the current member, and the second will be a cancellation handler that can be called
+     *  to cancel the iteration.
+     */
+    public class func iterateWithCancellationHandler(forEachCase: (T, Void -> Void) -> Void) {
+        var iterationCancelled = false
+        
+        let cancellationHandler = {
+            iterationCancelled = true
+        }
+        
+        self.iterateWithSequenceOverride({ Int in
+            return nil
+        }, forEachCase: {
+            forEachCase($0, cancellationHandler)
+            return !iterationCancelled
+        })
     }
     
     /**
@@ -31,19 +57,28 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number> {
      *  do not have a raw value that is the incremented raw value of the previous member.
      *
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
-     *  closure will be the current member.
+     *  closure will be the current member. The closure should return whether the iteration should continue or not.
      */
-    public class func iterateWithSequenceOverride(sequenceOverride: T.RawValue -> T?, forEachCase: T -> Void) {
+    public class func iterateWithSequenceOverride(sequenceOverride: T.RawValue -> T?, forEachCase: T -> Bool) {
         var currentRawValue = T.RawValue(0)
+        var firstValueFound = false
         
         while true {
             if let enumCase = sequenceOverride(currentRawValue) {
                 forEachCase(enumCase)
                 currentRawValue = enumCase.rawValue + T.RawValue(0)
+                firstValueFound = true
+                
                 continue
             } else if let enumCase = T(rawValue: currentRawValue) {
                 forEachCase(enumCase)
                 currentRawValue++
+                firstValueFound = true
+                
+                continue
+            } else if !firstValueFound {
+                currentRawValue++
+                
                 continue
             }
             
