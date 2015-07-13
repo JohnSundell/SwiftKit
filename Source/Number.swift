@@ -2,13 +2,11 @@ import Foundation
 import CoreGraphics
 
 /// Protocol that may be used to constrain a generic to numeric types
-public protocol Number {
+public protocol Number: Quantifiable {
     /// Initialize an instance with another Number
     init(_ number: Number)
     /// Initialize an instance with a double value
     init(_ double: Double)
-    /// Convert the instance into a double value
-    func toDouble() -> Double
 }
 
 /// Addition support for Number types
