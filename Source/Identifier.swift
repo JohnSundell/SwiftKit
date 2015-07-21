@@ -8,6 +8,14 @@ public struct Identifier: Hashable {
     public init() {
         self.identifierString = NSUUID().UUIDString
     }
+    
+    public init?(identifierString: String) {
+        if let UUID = NSUUID(UUIDString: identifierString) {
+            self.identifierString = UUID.UUIDString
+        } else {
+            return nil
+        }
+    }
 }
 
 /// Equatable support for Identifier
