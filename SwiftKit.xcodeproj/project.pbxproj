@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C09AC1B543521004511B0 /* Quantifiable.swift */; };
 		523C09AE1B543564004511B0 /* Quantifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C09AC1B543521004511B0 /* Quantifiable.swift */; };
+		52542A6A1B5EEE4E0034475A /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52542A691B5EEE4E0034475A /* Serializable.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		523C09AC1B543521004511B0 /* Quantifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quantifiable.swift; sourceTree = "<group>"; };
+		52542A691B5EEE4E0034475A /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528CE0D11B210E5E00AC1220 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
@@ -124,6 +126,7 @@
 				52C834FE1B13DCBC00174E9B /* Unwrap.swift */,
 				528CE0D11B210E5E00AC1220 /* Unbox.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
+				52542A691B5EEE4E0034475A /* Serializable.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52542A6A1B5EEE4E0034475A /* Serializable.swift in Sources */,
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
