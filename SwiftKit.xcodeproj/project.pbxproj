@@ -125,8 +125,8 @@
 				52FDA7641B1098CA00C9C808 /* Number.swift */,
 				52C834FE1B13DCBC00174E9B /* Unwrap.swift */,
 				528CE0D11B210E5E00AC1220 /* Unbox.swift */,
-				52FDA7501B0E945300C9C808 /* Info.plist */,
 				52542A691B5EEE4E0034475A /* Serializable.swift */,
+				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
