@@ -15,6 +15,7 @@
 		528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
 		528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D31B210E6500AC1220 /* UnboxTests.swift */; };
 		528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D11B210E5E00AC1220 /* Unbox.swift */; };
+		5296E38D1B5EFEF8005237EA /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296E38C1B5EFEF8005237EA /* Serialize.swift */; };
 		52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
 		52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
 		52C834F91B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
@@ -51,6 +52,7 @@
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528CE0D11B210E5E00AC1220 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
+		5296E38C1B5EFEF8005237EA /* Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
 		52C834BD1B139B6400174E9B /* EnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypes.swift; sourceTree = "<group>"; };
 		52C834F81B13C7F500174E9B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				52C834FE1B13DCBC00174E9B /* Unwrap.swift */,
 				528CE0D11B210E5E00AC1220 /* Unbox.swift */,
 				52542A691B5EEE4E0034475A /* Serializable.swift */,
+				5296E38C1B5EFEF8005237EA /* Serialize.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
 			path = Source;
@@ -252,6 +255,7 @@
 				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
 				523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */,
+				5296E38D1B5EFEF8005237EA /* Serialize.swift in Sources */,
 				52FDA76B1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
 				528CE0D21B210E5E00AC1220 /* Unbox.swift in Sources */,
 				52FDA7651B1098CA00C9C808 /* Number.swift in Sources */,
