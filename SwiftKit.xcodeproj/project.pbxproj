@@ -27,6 +27,7 @@
 		52CA89811B6D817F003DC193 /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89801B6D817F003DC193 /* CGPoint+SwiftKit.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89841B6D83DB003DC193 /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89801B6D817F003DC193 /* CGPoint+SwiftKit.swift */; };
+		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
 		52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
@@ -65,6 +66,7 @@
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52CA89801B6D817F003DC193 /* CGPoint+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKit.swift"; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
+		52CA89871B6D8BF4003DC193 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		52DF8F251B2F8106004CB8C0 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
+				52CA89871B6D8BF4003DC193 /* Animate.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
+				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
 				523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */,
 				52CA89811B6D817F003DC193 /* CGPoint+SwiftKit.swift in Sources */,
 				5296E38D1B5EFEF8005237EA /* Serialize.swift in Sources */,
