@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BA1B71232D005FD2C9 /* SetMap.swift */; };
+		521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BC1B7129B6005FD2C9 /* SetMapTests.swift */; };
+		521770BF1B712A11005FD2C9 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BA1B71232D005FD2C9 /* SetMap.swift */; };
 		523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C09AC1B543521004511B0 /* Quantifiable.swift */; };
 		523C09AE1B543564004511B0 /* Quantifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C09AC1B543521004511B0 /* Quantifiable.swift */; };
 		52542A6A1B5EEE4E0034475A /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52542A691B5EEE4E0034475A /* Serializable.swift */; };
@@ -53,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521770BA1B71232D005FD2C9 /* SetMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMap.swift; sourceTree = "<group>"; };
+		521770BC1B7129B6005FD2C9 /* SetMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMapTests.swift; sourceTree = "<group>"; };
 		523C09AC1B543521004511B0 /* Quantifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quantifiable.swift; sourceTree = "<group>"; };
 		52542A691B5EEE4E0034475A /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
@@ -152,6 +157,7 @@
 				52542A691B5EEE4E0034475A /* Serializable.swift */,
 				5296E38C1B5EFEF8005237EA /* Serialize.swift */,
 				5296E3B41B601C6C005237EA /* Dispatch.swift */,
+				521770BA1B71232D005FD2C9 /* SetMap.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
 			path = Source;
@@ -163,6 +169,7 @@
 				52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */,
 				528CE0D31B210E6500AC1220 /* UnboxTests.swift */,
 				52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */,
+				521770BC1B7129B6005FD2C9 /* SetMapTests.swift */,
 				52FDA7531B0E946B00C9C808 /* Info.plist */,
 			);
 			path = Tests;
@@ -276,6 +283,7 @@
 			files = (
 				52542A6A1B5EEE4E0034475A /* Serializable.swift in Sources */,
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
+				521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */,
 				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
 				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
@@ -307,9 +315,11 @@
 				528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
+				521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */,
 				52FDA7661B1098CA00C9C808 /* Number.swift in Sources */,
 				52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52CA89841B6D83DB003DC193 /* CGPoint+SwiftKit.swift in Sources */,
+				521770BF1B712A11005FD2C9 /* SetMap.swift in Sources */,
 				52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */,
 				52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */,
 				52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */,
