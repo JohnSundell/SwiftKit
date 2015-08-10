@@ -14,6 +14,7 @@ public func ==<T>(lhs: AnyOf<T>, rhs: T) -> Bool {
 public struct AnyOf<T: Hashable> {
     private let values: Set<T>
     
+    /// Initialize an instance of AnyOf<T> with an Array literal
     public init(_ values: T...) {
         var valueSet = Set<T>()
         
@@ -24,6 +25,7 @@ public struct AnyOf<T: Hashable> {
         self.init(values: valueSet)
     }
     
+    /// Initialize an instance of AnyOf<T> with a Set
     public init(values: Set<T>) {
         self.values = values
     }
