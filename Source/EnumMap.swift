@@ -5,7 +5,7 @@ public struct EnumMap<K: IterableEnum, V> {
     public private(set) var values: [V]
     
     /// Initialize an instance of this struct with a closure resolving an enum case into a value
-    public init(valueResolver: K -> V) {
+    public init(@noescape valueResolver: K -> V) {
         self.values = EnumIterator<K>.map() {
             return valueResolver($0)
         }

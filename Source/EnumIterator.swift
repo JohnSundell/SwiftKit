@@ -26,7 +26,7 @@ public class EnumIterator<T: IterableEnum> {
      *   @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *   closure will be the current member.
      */
-    public class func iterate(forEachCase: T -> Void) {
+    public class func iterate(@noescape forEachCase: T -> Void) {
         self.iterateWithSequenceOverride({ Int in
             return nil
         }, forEachCase: forEachCase)
@@ -43,7 +43,7 @@ public class EnumIterator<T: IterableEnum> {
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member.
      */
-    public class func iterateWithSequenceOverride(sequenceOverride: T.RawType -> T?, forEachCase: T -> Void) {
+    public class func iterateWithSequenceOverride(@noescape sequenceOverride: T.RawType -> T?, @noescape forEachCase: T -> Void) {
         var currentRawValue = T.RawType(0)
         
         while true {
@@ -68,7 +68,7 @@ public class EnumIterator<T: IterableEnum> {
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member. The returned object will be appended to the mapped array.
      */
-    public class func map<M>(forEachCase: T -> M) -> [M] {
+    public class func map<M>(@noescape forEachCase: T -> M) -> [M] {
         var mapped = [M]()
         
         self.iterate() {
