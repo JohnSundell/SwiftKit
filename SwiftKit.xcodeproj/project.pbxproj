@@ -25,8 +25,6 @@
 		5296E3B51B601C6C005237EA /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296E3B41B601C6C005237EA /* Dispatch.swift */; };
 		5298DF931B7AB4D300A899BC /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */; };
 		5298DF941B7AB4D900A899BC /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */; };
-		52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
-		52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834BD1B139B6400174E9B /* EnumTypes.swift */; };
 		52C834F91B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
 		52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
 		52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
@@ -73,7 +71,6 @@
 		5296E38C1B5EFEF8005237EA /* Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
 		5296E3B41B601C6C005237EA /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKit.swift"; sourceTree = "<group>"; };
-		52C834BD1B139B6400174E9B /* EnumTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTypes.swift; sourceTree = "<group>"; };
 		52C834F81B13C7F500174E9B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
@@ -164,7 +161,6 @@
 				52DF8F341B2F8B7D004CB8C0 /* SpriteKit */,
 				5276658E1B2DECEC00DBDC11 /* iOS */,
 				52FDA76A1B10A5AC00C9C808 /* EnumIterator.swift */,
-				52C834BD1B139B6400174E9B /* EnumTypes.swift */,
 				52FDA75B1B0E987800C9C808 /* EnumMap.swift */,
 				52DF8F251B2F8106004CB8C0 /* Identifier.swift */,
 				52FDA7551B0E95AD00C9C808 /* Repeat.swift */,
@@ -307,7 +303,6 @@
 				52DF8EE81B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift in Sources */,
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */,
-				52C834BE1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
 				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
 				523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */,
@@ -333,7 +328,6 @@
 			files = (
 				52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				5298DF941B7AB4D900A899BC /* CGPoint+SwiftKit.swift in Sources */,
-				52C834BF1B139B6400174E9B /* EnumTypes.swift in Sources */,
 				52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */,
 				527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				52FDA76C1B10A5AC00C9C808 /* EnumIterator.swift in Sources */,
