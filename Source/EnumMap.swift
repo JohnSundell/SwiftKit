@@ -5,7 +5,7 @@ public struct EnumMap<K: RawRepresentable, V where K.RawValue: Number, K: Hashab
     public private(set) var values: [K : V]
     
     /// Initialize an instance of this struct with a closure resolving an enum case into a value
-    public init(valueResolver: K -> V) {
+    public init(@noescape valueResolver: K -> V) {
         self.values = EnumIterator<K>.map() {
             return valueResolver($0)
         }

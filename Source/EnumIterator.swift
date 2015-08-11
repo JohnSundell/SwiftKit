@@ -16,7 +16,7 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hasha
      *   @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *   closure will be the current member.
      */
-    public class func iterate(forEachCase: T -> Void) {
+    public class func iterate(@noescape forEachCase: T -> Void) {
         self.iterateWithSequenceOverride({ Int in
             return nil
         }, forEachCase: {
@@ -33,7 +33,7 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hasha
      *  closure will be the current member, and the second will be a cancellation handler that can be called
      *  to cancel the iteration.
      */
-    public class func iterateWithCancellationHandler(forEachCase: (T, Void -> Void) -> Void) {
+    public class func iterateWithCancellationHandler(@noescape forEachCase: (T, Void -> Void) -> Void) {
         var iterationCancelled = false
         
         let cancellationHandler = {
@@ -59,7 +59,7 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hasha
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member. The closure should return whether the iteration should continue or not.
      */
-    public class func iterateWithSequenceOverride(sequenceOverride: T.RawValue -> T?, forEachCase: T -> Bool) {
+    public class func iterateWithSequenceOverride(@noescape sequenceOverride: T.RawValue -> T?, @noescape forEachCase: T -> Bool) {
         var currentRawValue = T.RawValue(0)
         var firstValueFound = false
         
@@ -93,7 +93,7 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hasha
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member. The returned object will be appended to the mapped array.
      */
-    public class func map<M>(forEachCase: T -> M) -> [M] {
+    public class func map<M>(@noescape forEachCase: T -> M) -> [M] {
         var mapped = [M]()
         
         self.iterate() {
@@ -110,7 +110,7 @@ public class EnumIterator<T: RawRepresentable where T.RawValue: Number, T: Hasha
      *  @param forEachCase A closure to execute on each member of the enum. The parameter sent to the
      *  closure will be the current member. The returned object will be added to the mapped dictionary.
      */
-    public class func map<M>(forEachCase: T -> M) -> [T : M] {
+    public class func map<M>(@noescape forEachCase: T -> M) -> [T : M] {
         var mapped = [T : M]()
         
         self.iterate() {
