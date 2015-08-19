@@ -10,4 +10,12 @@ public extension CGSize {
         
         return size
     }
+    
+    /// Return the point at which this size is centered within another size
+    public func centerPointInSize(size: CGSize) -> CGPoint {
+        return CGPoint(
+            x: floor((size.width - self.width) / 2),
+            y: floor((size.height - self.height) / 2)
+        )
+    }
 }
