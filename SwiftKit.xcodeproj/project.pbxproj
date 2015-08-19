@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520B4D6D1B84F738003C87A4 /* CGSize+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */; };
+		520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */; };
+		520B4D701B84F7E0003C87A4 /* CGSize+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */; };
 		521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BA1B71232D005FD2C9 /* SetMap.swift */; };
 		521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BC1B7129B6005FD2C9 /* SetMapTests.swift */; };
 		521770BF1B712A11005FD2C9 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BA1B71232D005FD2C9 /* SetMap.swift */; };
@@ -59,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+SwiftKit.swift"; sourceTree = "<group>"; };
+		520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		521770BA1B71232D005FD2C9 /* SetMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMap.swift; sourceTree = "<group>"; };
 		521770BC1B7129B6005FD2C9 /* SetMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMapTests.swift; sourceTree = "<group>"; };
 		523C09AC1B543521004511B0 /* Quantifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quantifiable.swift; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 			children = (
 				52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */,
 				5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */,
+				520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */,
 				52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */,
 			);
 			name = Extensions;
@@ -185,6 +191,7 @@
 				52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */,
 				528CE0D31B210E6500AC1220 /* UnboxTests.swift */,
 				52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */,
+				520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */,
 				521770BC1B7129B6005FD2C9 /* SetMapTests.swift */,
 				52436BE11B79672000570956 /* AnyOfTests.swift */,
 				52FDA7531B0E946B00C9C808 /* Info.plist */,
@@ -303,6 +310,7 @@
 				52DF8EE81B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift in Sources */,
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */,
+				520B4D6D1B84F738003C87A4 /* CGSize+SwiftKit.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
 				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
 				523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */,
@@ -340,8 +348,10 @@
 				52FDA7661B1098CA00C9C808 /* Number.swift in Sources */,
 				52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52436BE41B7967E100570956 /* AnyOf.swift in Sources */,
+				520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */,
 				521770BF1B712A11005FD2C9 /* SetMap.swift in Sources */,
 				52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */,
+				520B4D701B84F7E0003C87A4 /* CGSize+SwiftKit.swift in Sources */,
 				52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */,
 				52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */,
 			);
