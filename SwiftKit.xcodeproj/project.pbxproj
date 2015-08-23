@@ -28,6 +28,8 @@
 		5296E3B51B601C6C005237EA /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296E3B41B601C6C005237EA /* Dispatch.swift */; };
 		5298DF931B7AB4D300A899BC /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */; };
 		5298DF941B7AB4D900A899BC /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */; };
+		529DCE0F1B8659610009A8A4 /* Array+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DCE0E1B8659610009A8A4 /* Array+SwiftKit.swift */; };
+		529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */; };
 		52C834F91B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
 		52C834FA1B13C7F500174E9B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834F81B13C7F500174E9B /* Calculate.swift */; };
 		52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
@@ -40,6 +42,8 @@
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
 		52DF8F361B2F8B98004CB8C0 /* AreaNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F351B2F8B98004CB8C0 /* AreaNode.swift */; };
+		52E37FBC1B8A910B008C8479 /* ArrayDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E37FBB1B8A910B008C8479 /* ArrayDictionary.swift */; };
+		52E37FBD1B8A910B008C8479 /* ArrayDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E37FBB1B8A910B008C8479 /* ArrayDictionary.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 		52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
 		52FDA7571B0E95AD00C9C808 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDA7551B0E95AD00C9C808 /* Repeat.swift */; };
@@ -76,6 +80,8 @@
 		5296E38C1B5EFEF8005237EA /* Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
 		5296E3B41B601C6C005237EA /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKit.swift"; sourceTree = "<group>"; };
+		529DCE0E1B8659610009A8A4 /* Array+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SwiftKit.swift"; sourceTree = "<group>"; };
+		529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftKit.swift"; sourceTree = "<group>"; };
 		52C834F81B13C7F500174E9B /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		52DF8F251B2F8106004CB8C0 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52DF8F351B2F8B98004CB8C0 /* AreaNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaNode.swift; sourceTree = "<group>"; };
+		52E37FBB1B8A910B008C8479 /* ArrayDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDictionary.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 			children = (
 				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
 				52CA89871B6D8BF4003DC193 /* Animate.swift */,
+				529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */,
+				529DCE0E1B8659610009A8A4 /* Array+SwiftKit.swift */,
 				5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */,
 				520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */,
 				52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */,
@@ -180,6 +189,7 @@
 				5296E3B41B601C6C005237EA /* Dispatch.swift */,
 				521770BA1B71232D005FD2C9 /* SetMap.swift */,
 				52436BDF1B79656D00570956 /* AnyOf.swift */,
+				52E37FBB1B8A910B008C8479 /* ArrayDictionary.swift */,
 				52FDA7501B0E945300C9C808 /* Info.plist */,
 			);
 			path = Source;
@@ -308,10 +318,12 @@
 			files = (
 				52542A6A1B5EEE4E0034475A /* Serializable.swift in Sources */,
 				52DF8EE81B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift in Sources */,
+				529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */,
 				52C834FF1B13DCBC00174E9B /* Unwrap.swift in Sources */,
 				521770BB1B71232D005FD2C9 /* SetMap.swift in Sources */,
 				520B4D6D1B84F738003C87A4 /* CGSize+SwiftKit.swift in Sources */,
 				52C834F91B13C7F500174E9B /* Calculate.swift in Sources */,
+				52E37FBC1B8A910B008C8479 /* ArrayDictionary.swift in Sources */,
 				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
 				523C09AD1B543521004511B0 /* Quantifiable.swift in Sources */,
 				5298DF931B7AB4D300A899BC /* CGPoint+SwiftKit.swift in Sources */,
@@ -323,6 +335,7 @@
 				52436BE01B79656D00570956 /* AnyOf.swift in Sources */,
 				52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */,
 				52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */,
+				529DCE0F1B8659610009A8A4 /* Array+SwiftKit.swift in Sources */,
 				52DF8F361B2F8B98004CB8C0 /* AreaNode.swift in Sources */,
 				52FDA7561B0E95AD00C9C808 /* Repeat.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
@@ -342,6 +355,7 @@
 				523C09AE1B543564004511B0 /* Quantifiable.swift in Sources */,
 				52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */,
 				528CE0D51B210EAD00AC1220 /* Unbox.swift in Sources */,
+				52E37FBD1B8A910B008C8479 /* ArrayDictionary.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
 				521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */,
