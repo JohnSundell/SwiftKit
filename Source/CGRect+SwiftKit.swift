@@ -9,6 +9,12 @@ public extension CGRect {
         return bounds
     }
     
+    /// Convenience initializer to create a CGRect with only a CGPoint
+    init(origin: CGPoint) {
+        self.origin = origin
+        self.size = CGSize()
+    }
+    
     /// Convenience initializer to create a CGRect with only a CGSize
     init(size: CGSize) {
         self.origin = CGPoint()
