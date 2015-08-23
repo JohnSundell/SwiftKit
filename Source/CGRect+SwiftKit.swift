@@ -20,4 +20,18 @@ public extension CGRect {
         self.origin = CGPoint()
         self.size = size
     }
+    
+    /// Create a new rect by changing this rect's origin property
+    func rectWithOrigin(origin: CGPoint) -> CGRect {
+        var rect = self
+        rect.origin = origin
+        return rect
+    }
+    
+    /// Create a new rect by changing this rect's size property
+    func rectWithSize(size: CGSize) -> CGRect {
+        var rect = self
+        rect.size = size
+        return rect
+    }
 }
