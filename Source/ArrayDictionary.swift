@@ -3,7 +3,7 @@ import Foundation
 /// Dictionary-like structure that manages a set of arrays for each key
 public struct ArrayDictionary<Key: Hashable, ArrayValue> {
     /// The key contained within this structure
-    public var keys: [Key] { return self.dictionary.keys.array }
+    public var keys: [Key] { return Array(self.dictionary.keys) }
     
     private var dictionary: [Key : [ArrayValue]]
     
