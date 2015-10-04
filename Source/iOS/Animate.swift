@@ -9,15 +9,15 @@ public func Animate(duration: NSTimeInterval, animations: () -> Void, onCompleti
 
 /// Perform a closure of animations with a certain duration
 public func Animate(duration: NSTimeInterval, animations: () -> Void) {
-    Animate(duration, animations, nil)
+    Animate(duration, animations: animations, onCompletion: nil)
 }
 
 /// Perform a closure of animations with a default 0.3 second duration, optionally attaching a completion handler
 public func Animate(animations: () -> Void, onCompletion: (() -> Void)?) {
-    Animate(0.3, animations, onCompletion)
+    Animate(0.3, animations: animations, onCompletion: onCompletion)
 }
 
 /// Perform a closure of animations with a default 0.3 second duration
 public func Animate(animations: () -> Void) {
-    Animate(animations, nil)
+    Animate(animations, onCompletion: nil)
 }
