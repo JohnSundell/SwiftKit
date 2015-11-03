@@ -31,6 +31,14 @@ public postfix func --<T: Number>(inout number: T) -> T {
     return number
 }
 
+/// Convenience API for convering numbers to strings
+public extension Number {
+    /// Return a string representation of the number
+    func toString() -> String {
+        return "\(self)"
+    }
+}
+
 /// Extension that makes Int conform to Number
 extension Int: Number {
     public init(_ number: Number) {

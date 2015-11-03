@@ -36,6 +36,7 @@
 		52C835001B13DCBC00174E9B /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C834FE1B13DCBC00174E9B /* Unwrap.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
+		52D6D8C61BE92DAD002C0205 /* NumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8C41BE92DA2002C0205 /* NumberTests.swift */; };
 		52DF8EE41B2E46DD004CB8C0 /* String+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */; };
 		52DF8EE81B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */; };
 		52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
@@ -86,6 +87,7 @@
 		52C834FE1B13DCBC00174E9B /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		52CA89871B6D8BF4003DC193 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
+		52D6D8C41BE92DA2002C0205 /* NumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTests.swift; sourceTree = "<group>"; };
 		52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8F251B2F8106004CB8C0 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */,
 				521770BC1B7129B6005FD2C9 /* SetMapTests.swift */,
 				52436BE11B79672000570956 /* AnyOfTests.swift */,
+				52D6D8C41BE92DA2002C0205 /* NumberTests.swift */,
 				52FDA7531B0E946B00C9C808 /* Info.plist */,
 			);
 			path = Tests;
@@ -363,6 +366,7 @@
 				52FDA75D1B0E987800C9C808 /* EnumMap.swift in Sources */,
 				52436BE41B7967E100570956 /* AnyOf.swift in Sources */,
 				520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */,
+				52D6D8C61BE92DAD002C0205 /* NumberTests.swift in Sources */,
 				521770BF1B712A11005FD2C9 /* SetMap.swift in Sources */,
 				52DF8F2A1B2F8135004CB8C0 /* Identifier.swift in Sources */,
 				520B4D701B84F7E0003C87A4 /* CGSize+SwiftKit.swift in Sources */,
