@@ -16,4 +16,9 @@ class AnyOfTests: XCTestCase {
         XCTAssertFalse(valueC == anyValue)
         XCTAssertFalse(anyValue == valueC)
     }
+    
+    func testGreaterThanOperatorForNumericTypes() {
+        XCTAssertFalse(AnyOf(1, 2) > 2)
+        XCTAssertTrue(AnyOf(1, 2, 3) > 2)
+    }
 }
