@@ -2,6 +2,11 @@ import CoreGraphics
 
 /// SwiftKit extensions to CGSize
 public extension CGSize {
+    /// Convenience initializer to create a square size
+    public init(squareSize: CGFloat) {
+        self.init(width: squareSize, height: squareSize)
+    }
+    
     /// Return a new size that's the product of scaling this size in both dimensions
     public func sizeWithScale(scale: CGFloat) -> CGSize {
         var size = self
