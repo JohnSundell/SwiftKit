@@ -1,3 +1,6 @@
 [submodule "Unbox"]
 	path = Unbox
 	url = git@github.com:JohnSundell/Unbox.git
+[submodule "Flow"]
+	path = Flow
+	url = git@github.com:JohnSundell/Flow.git

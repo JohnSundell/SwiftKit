@@ -69,6 +69,9 @@
 		52D6D9461BEE5C15002C0205 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9141BEE5C15002C0205 /* Unwrap.swift */; };
 		52D6D9481BEE5C2E002C0205 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9471BEE5C2E002C0205 /* Unbox.swift */; };
 		52D6D9491BEE5C2E002C0205 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9471BEE5C2E002C0205 /* Unbox.swift */; };
+		52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94A1BEE5C91002C0205 /* Flow.swift */; };
+		52D6D94C1BEE5C91002C0205 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94A1BEE5C91002C0205 /* Flow.swift */; };
+		52D6D94E1BEE5CA4002C0205 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +122,8 @@
 		52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftKit.swift"; sourceTree = "<group>"; };
 		52D6D9141BEE5C15002C0205 /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52D6D9471BEE5C2E002C0205 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
+		52D6D94A1BEE5C91002C0205 /* Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flow.swift; path = Flow/Flow.swift; sourceTree = SOURCE_ROOT; };
+		52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowTests.swift; path = Flow/FlowTests.swift; sourceTree = SOURCE_ROOT; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +177,7 @@
 				52D6D9071BEE5C15002C0205 /* Dispatch.swift */,
 				52D6D9081BEE5C15002C0205 /* EnumIterator.swift */,
 				52D6D9091BEE5C15002C0205 /* EnumMap.swift */,
+				52D6D94A1BEE5C91002C0205 /* Flow.swift */,
 				52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
@@ -219,6 +225,7 @@
 		52FDA7521B0E946B00C9C808 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */,
 				52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */,
 				528CE0D31B210E6500AC1220 /* UnboxTests.swift */,
 				52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */,
@@ -359,6 +366,7 @@
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
 				52D6D9481BEE5C2E002C0205 /* Unbox.swift in Sources */,
 				52D6D91D1BEE5C15002C0205 /* Axis.swift in Sources */,
+				52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */,
 				52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */,
 				52D6D9311BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52D6D92F1BEE5C15002C0205 /* EnumMap.swift in Sources */,
@@ -395,6 +403,7 @@
 				52D6D9301BEE5C15002C0205 /* EnumMap.swift in Sources */,
 				52D6D9201BEE5C15002C0205 /* Calculate.swift in Sources */,
 				52D6D9181BEE5C15002C0205 /* AreaNode.swift in Sources */,
+				52D6D94C1BEE5C91002C0205 /* Flow.swift in Sources */,
 				520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */,
 				52D6D92A1BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
@@ -402,6 +411,7 @@
 				52D6D9221BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
 				52D6D9401BEE5C15002C0205 /* Serialize.swift in Sources */,
 				52D6D8C61BE92DAD002C0205 /* NumberTests.swift in Sources */,
+				52D6D94E1BEE5CA4002C0205 /* FlowTests.swift in Sources */,
 				52D6D9461BEE5C15002C0205 /* Unwrap.swift in Sources */,
 				52D6D92C1BEE5C15002C0205 /* Dispatch.swift in Sources */,
 				52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */,
