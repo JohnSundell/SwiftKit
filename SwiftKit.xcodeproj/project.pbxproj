@@ -40,6 +40,7 @@
 		52D6D8F21BED7C67002C0205 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8F11BED7C67002C0205 /* Direction.swift */; };
 		52D6D8F41BEE3D1C002C0205 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8F31BEE3D1C002C0205 /* Axis.swift */; };
 		52D6D8F61BEE4EB7002C0205 /* Hashable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8F51BEE4EB7002C0205 /* Hashable+Equatable.swift */; };
+		52D6D8F81BEE5058002C0205 /* RawRepresentable+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8F71BEE5058002C0205 /* RawRepresentable+SwiftKit.swift */; };
 		52DF8EE41B2E46DD004CB8C0 /* String+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */; };
 		52DF8EE81B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */; };
 		52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F251B2F8106004CB8C0 /* Identifier.swift */; };
@@ -94,6 +95,7 @@
 		52D6D8F11BED7C67002C0205 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		52D6D8F31BEE3D1C002C0205 /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
 		52D6D8F51BEE4EB7002C0205 /* Hashable+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hashable+Equatable.swift"; sourceTree = "<group>"; };
+		52D6D8F71BEE5058002C0205 /* RawRepresentable+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8EE71B2E4C8B004CB8C0 /* CGRect+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8F251B2F8106004CB8C0 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				52DF8EE31B2E46DD004CB8C0 /* String+SwiftKit.swift */,
+				52D6D8F71BEE5058002C0205 /* RawRepresentable+SwiftKit.swift */,
 				529DCE0E1B8659610009A8A4 /* Array+SwiftKit.swift */,
 				5298DF921B7AB4D300A899BC /* CGPoint+SwiftKit.swift */,
 				520B4D6C1B84F738003C87A4 /* CGSize+SwiftKit.swift */,
@@ -348,6 +351,7 @@
 				52436BE01B79656D00570956 /* AnyOf.swift in Sources */,
 				52DF8F261B2F8106004CB8C0 /* Identifier.swift in Sources */,
 				52FDA75C1B0E987800C9C808 /* EnumMap.swift in Sources */,
+				52D6D8F81BEE5058002C0205 /* RawRepresentable+SwiftKit.swift in Sources */,
 				529DCE0F1B8659610009A8A4 /* Array+SwiftKit.swift in Sources */,
 				52D6D8F41BEE3D1C002C0205 /* Axis.swift in Sources */,
 				52DF8F361B2F8B98004CB8C0 /* AreaNode.swift in Sources */,
