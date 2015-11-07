@@ -20,5 +20,18 @@ public struct Direction {
         case DownLeft
         case Left
         case LeftUp
+        
+        public init(_ fourWayDirection: FourWay) {
+            switch fourWayDirection {
+            case .Up:
+                self = .Up
+            case .Right:
+                self = .Right
+            case .Down:
+                self = .Down
+            case .Left:
+                self = .Left
+            }
+        }
     }
 }
