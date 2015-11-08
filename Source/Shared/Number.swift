@@ -14,6 +14,11 @@ public func +<T: Number>(lhs: T, rhs: T) -> T {
     return T(lhs.toDouble() + rhs.toDouble())
 }
 
+/// Subtraction support for Number types
+public func -<T: Number>(lhs: T, rhs: T) -> T {
+    return T(lhs.toDouble() - rhs.toDouble())
+}
+
 /// Multiplication support for Number types
 public func *<T: Number>(lhs: T, rhs: T) -> T {
     return T(lhs.toDouble() * rhs.toDouble())
@@ -31,8 +36,16 @@ public postfix func --<T: Number>(inout number: T) -> T {
     return number
 }
 
-/// Convenience API for convering numbers to strings
+/// Convenience API for Number types
 public extension Number {
+    /// The fractional part of the number's value
+    public var fractionalValue: Self { return self - self.floor() }
+    
+    /// Return a value that is the result of flooring this value
+    public func floor() -> Self {
+        return Self(Foundation.floor(self.toDouble()))
+    }
+    
     /// Return a string representation of the number
     func toString() -> String {
         return "\(self)"

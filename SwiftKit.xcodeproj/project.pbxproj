@@ -159,8 +159,8 @@
 		5276658E1B2DECEC00DBDC11 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
 				52CA89871B6D8BF4003DC193 /* Animate.swift */,
+				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
 				529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */,
 			);
 			path = iOS;
