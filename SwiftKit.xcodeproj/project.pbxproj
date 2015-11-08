@@ -74,6 +74,8 @@
 		52D6D94E1BEE5CA4002C0205 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */; };
 		52D6D9501BEE60D0002C0205 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
 		52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
+		52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
+		52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +129,7 @@
 		52D6D94A1BEE5C91002C0205 /* Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flow.swift; path = Flow/Flow.swift; sourceTree = SOURCE_ROOT; };
 		52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowTests.swift; path = Flow/FlowTests.swift; sourceTree = SOURCE_ROOT; };
 		52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableEnum.swift; sourceTree = "<group>"; };
+		52D6D9621BEFCEDC002C0205 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +188,7 @@
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
+				52D6D9621BEFCEDC002C0205 /* Position.swift */,
 				52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */,
 				52D6D90E1BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift */,
 				52D6D90F1BEE5C15002C0205 /* Repeat.swift */,
@@ -379,6 +383,7 @@
 				52D6D93D1BEE5C15002C0205 /* Serializable.swift in Sources */,
 				52D6D91F1BEE5C15002C0205 /* Calculate.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
+				52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */,
 				52D6D9251BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +428,7 @@
 				52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */,
 				52D6D9341BEE5C15002C0205 /* Identifier.swift in Sources */,
 				52D6D91A1BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */,
+				52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */,
 				52D6D9421BEE5C15002C0205 /* SetMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
