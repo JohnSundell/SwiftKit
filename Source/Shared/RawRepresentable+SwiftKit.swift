@@ -1,6 +1,6 @@
 import Foundation
 
-/// Extension that enables enums with a numeric raw value to be strideable
+/// Extension that enables enums with a Number raw value to be strideable
 public extension RawRepresentable where RawValue: Number {
     /// Go to the next member of the enum
     public func next() -> Self? {
