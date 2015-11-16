@@ -77,6 +77,20 @@
 		52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
+		52E0E7DB1BF78C04001E321E /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
+		52E0E7E41BF7AF87001E321E /* MutableIndexedCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */; };
+		52E0E7E61BF7AFBB001E321E /* EmptyInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E51BF7AFBB001E321E /* EmptyInitializable.swift */; };
+		52E0E7E71BF7B130001E321E /* EmptyInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E51BF7AFBB001E321E /* EmptyInitializable.swift */; };
+		52E0E7E81BF7B130001E321E /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
+		52E0E7E91BF7B130001E321E /* MutableIndexedCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */; };
+		52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */; };
+		52E0E7EF1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */; };
+		52E0E7F11BF7B791001E321E /* Probability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F01BF7B791001E321E /* Probability.swift */; };
+		52E0E7F21BF7B791001E321E /* Probability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F01BF7B791001E321E /* Probability.swift */; };
+		52E0E7F41BF7B903001E321E /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
+		52E0E7F51BF7B904001E321E /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
+		52E0E7F71BF7C3DE001E321E /* Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F61BF7C3DE001E321E /* Randomizable.swift */; };
+		52E0E7F81BF7C3DE001E321E /* Randomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F61BF7C3DE001E321E /* Randomizable.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +145,13 @@
 		52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableEnum.swift; sourceTree = "<group>"; };
 		52D6D9621BEFCEDC002C0205 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
+		52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedCollection.swift; sourceTree = "<group>"; };
+		52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableIndexedCollectionType.swift; sourceTree = "<group>"; };
+		52E0E7E51BF7AFBB001E321E /* EmptyInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyInitializable.swift; sourceTree = "<group>"; };
+		52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SwiftKit.swift"; sourceTree = "<group>"; };
+		52E0E7F01BF7B791001E321E /* Probability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Probability.swift; sourceTree = "<group>"; };
+		52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Unbox+SwiftKit.swift"; sourceTree = "<group>"; };
+		52E0E7F61BF7C3DE001E321E /* Randomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randomizable.swift; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7501B0E945300C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +183,7 @@
 				52CA89871B6D8BF4003DC193 /* Animate.swift */,
 				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
 				529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */,
+				52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -181,15 +203,20 @@
 				52D6D9051BEE5C15002C0205 /* Dictionary+SwiftKit.swift */,
 				52D6D9061BEE5C15002C0205 /* Direction.swift */,
 				52D6D9071BEE5C15002C0205 /* Dispatch.swift */,
+				52E0E7E51BF7AFBB001E321E /* EmptyInitializable.swift */,
 				52D6D9081BEE5C15002C0205 /* EnumIterator.swift */,
 				52D6D9091BEE5C15002C0205 /* EnumMap.swift */,
 				52D6D94A1BEE5C91002C0205 /* Flow.swift */,
 				52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
+				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
 				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
+				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
 				52D6D9621BEFCEDC002C0205 /* Position.swift */,
+				52E0E7F01BF7B791001E321E /* Probability.swift */,
 				52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */,
+				52E0E7F61BF7C3DE001E321E /* Randomizable.swift */,
 				52D6D90E1BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift */,
 				52D6D90F1BEE5C15002C0205 /* Repeat.swift */,
 				52D6D9101BEE5C15002C0205 /* Serializable.swift */,
@@ -197,6 +224,7 @@
 				52D6D9121BEE5C15002C0205 /* SetMap.swift */,
 				52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */,
 				52D6D9471BEE5C2E002C0205 /* Unbox.swift */,
+				52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */,
 				52D6D9141BEE5C15002C0205 /* Unwrap.swift */,
 			);
 			path = Shared;
@@ -356,7 +384,9 @@
 				529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */,
 				52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */,
 				52D6D9191BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */,
+				52E0E7E61BF7AFBB001E321E /* EmptyInitializable.swift in Sources */,
 				52D6D9431BEE5C15002C0205 /* String+SwiftKit.swift in Sources */,
+				52E0E7F71BF7C3DE001E321E /* Randomizable.swift in Sources */,
 				52D6D9171BEE5C15002C0205 /* AreaNode.swift in Sources */,
 				52D6D9151BEE5C15002C0205 /* AnyOf.swift in Sources */,
 				52D6D9211BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
@@ -371,19 +401,24 @@
 				52D6D9371BEE5C15002C0205 /* Quantifiable.swift in Sources */,
 				52D6D9411BEE5C15002C0205 /* SetMap.swift in Sources */,
 				52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */,
+				52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
+				52E0E7F11BF7B791001E321E /* Probability.swift in Sources */,
 				52D6D9481BEE5C2E002C0205 /* Unbox.swift in Sources */,
 				52D6D9501BEE60D0002C0205 /* LoopableEnum.swift in Sources */,
 				52D6D91D1BEE5C15002C0205 /* Axis.swift in Sources */,
 				52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */,
 				52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */,
 				52D6D9311BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
+				52E0E7F41BF7B903001E321E /* Unbox+SwiftKit.swift in Sources */,
 				52D6D92F1BEE5C15002C0205 /* EnumMap.swift in Sources */,
 				52D6D92D1BEE5C15002C0205 /* EnumIterator.swift in Sources */,
 				52D6D93D1BEE5C15002C0205 /* Serializable.swift in Sources */,
+				52E0E7E41BF7AF87001E321E /* MutableIndexedCollectionType.swift in Sources */,
 				52D6D91F1BEE5C15002C0205 /* Calculate.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */,
+				52E0E7DB1BF78C04001E321E /* KeyedCollection.swift in Sources */,
 				52D6D9251BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,13 +435,17 @@
 				52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */,
 				528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */,
 				52D6D9441BEE5C15002C0205 /* String+SwiftKit.swift in Sources */,
+				52E0E7EF1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
+				52E0E7F21BF7B791001E321E /* Probability.swift in Sources */,
 				52D6D9361BEE5C15002C0205 /* Number.swift in Sources */,
 				52D6D93C1BEE5C15002C0205 /* Repeat.swift in Sources */,
 				52D6D9281BEE5C15002C0205 /* Dictionary+SwiftKit.swift in Sources */,
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
 				52D6D91C1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
+				52E0E7F51BF7B904001E321E /* Unbox+SwiftKit.swift in Sources */,
 				52D6D93E1BEE5C15002C0205 /* Serializable.swift in Sources */,
 				52D6D9491BEE5C2E002C0205 /* Unbox.swift in Sources */,
+				52E0E7E81BF7B130001E321E /* KeyedCollection.swift in Sources */,
 				521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */,
 				52D6D91E1BEE5C15002C0205 /* Axis.swift in Sources */,
 				52D6D9241BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
@@ -418,8 +457,11 @@
 				52D6D92A1BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52D6D9261BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
+				52E0E7E91BF7B130001E321E /* MutableIndexedCollectionType.swift in Sources */,
+				52E0E7E71BF7B130001E321E /* EmptyInitializable.swift in Sources */,
 				52D6D9221BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
 				52D6D9401BEE5C15002C0205 /* Serialize.swift in Sources */,
+				52E0E7F81BF7C3DE001E321E /* Randomizable.swift in Sources */,
 				52D6D8C61BE92DAD002C0205 /* NumberTests.swift in Sources */,
 				52D6D94E1BEE5CA4002C0205 /* FlowTests.swift in Sources */,
 				52D6D9461BEE5C15002C0205 /* Unwrap.swift in Sources */,
