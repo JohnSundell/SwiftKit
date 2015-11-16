@@ -25,19 +25,13 @@ public func ==(lhs: Identifier, rhs: Identifier) -> Bool {
 
 /// Unbox support for Identifier
 extension Identifier: UnboxableByTransform {
-    public typealias UnboxTransformerType = IdentifierUnboxTransformer
-}
-
-/// An Unbox transformer that can transform Strings into `Identifier` instances
-public class IdentifierUnboxTransformer: UnboxTransformer {
-    public typealias RawType = String
-    public typealias TransformedType = Identifier
+    public typealias UnboxRawValueType = String
     
-    public static func transformUnboxedValue(unboxedValue: RawType) -> TransformedType? {
+    public static func transformUnboxedValue(unboxedValue: String) -> Identifier? {
         return Identifier(identifierString: unboxedValue)
     }
     
-    public static func fallbackValue() -> TransformedType {
+    public static func unboxFallbackValue() -> Identifier {
         return Identifier()
     }
 }
