@@ -33,6 +33,16 @@ public func ==<T>(lhs: AnyOf<T>, rhs: T) -> Bool {
     return lhs.values.contains(rhs)
 }
 
+/// Inverse compare a value of T with an AnyOf<T> instance
+public func !=<T>(lhs: T, rhs: AnyOf<T>) -> Bool {
+    return !(lhs == rhs)
+}
+
+/// Inverse compare an AnyOf<T> instance with a value of T
+public func !=<T>(lhs: AnyOf<T>, rhs: T) -> Bool {
+    return !(lhs == rhs)
+}
+
 /// Return whether any of T is greater than T if T is a numeric type
 public func ><T: Number>(lhs: AnyOf<T>, rhs: T) -> Bool {
     for value in lhs.values {
