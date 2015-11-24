@@ -128,6 +128,7 @@
 		52F515711C051B7500AA6895 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9471BEE5C2E002C0205 /* Unbox.swift */; };
 		52F515721C051B7500AA6895 /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
 		52F515731C051B7500AA6895 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9141BEE5C15002C0205 /* Unwrap.swift */; };
+		52F515881C0523AB00AA6895 /* NSView+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,9 +194,9 @@
 		52F5154C1C051B0100AA6895 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		52F5154D1C051B0100AA6895 /* OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OSX.plist; sourceTree = "<group>"; };
 		52F5154E1C051B0100AA6895 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
+		52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+SwiftKit.swift"; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52FDA7531B0E946B00C9C808 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +288,14 @@
 			path = Configs;
 			sourceTree = SOURCE_ROOT;
 		};
+		52F515841C0521FC00AA6895 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
 		52FDA71E1B0E916700C9C808 = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				52D6D8FB1BEE5C15002C0205 /* Shared */,
+				52F515841C0521FC00AA6895 /* OSX */,
 				5276658E1B2DECEC00DBDC11 /* iOS */,
 			);
 			path = Source;
@@ -327,7 +337,6 @@
 				521770BC1B7129B6005FD2C9 /* SetMapTests.swift */,
 				52436BE11B79672000570956 /* AnyOfTests.swift */,
 				52D6D8C41BE92DA2002C0205 /* NumberTests.swift */,
-				52FDA7531B0E946B00C9C808 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -487,6 +496,7 @@
 				52F515681C051B7500AA6895 /* Probability.swift in Sources */,
 				52F5156C1C051B7500AA6895 /* Repeat.swift in Sources */,
 				52F515581C051B7500AA6895 /* CGRect+SwiftKit.swift in Sources */,
+				52F515881C0523AB00AA6895 /* NSView+SwiftKit.swift in Sources */,
 				52F515661C051B7500AA6895 /* MutableIndexedCollectionType.swift in Sources */,
 				52F515591C051B7500AA6895 /* CGSize+SwiftKit.swift in Sources */,
 				52F5156D1C051B7500AA6895 /* Serializable.swift in Sources */,
