@@ -1,5 +1,3 @@
-#if os(iOS)
-
 import UIKit
 
 /// A button that executes a closure when tapped
@@ -24,5 +22,3 @@ public class ClosureButton: UIButton {
         self.closure()
     }
 }
-
-#endif

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-               BuildableName = "SwiftKit.framework"
-               BlueprintName = "SwiftKit"
+               BuildableName = "SwiftKit-iOS.framework"
+               BlueprintName = "SwiftKit-iOS"
                ReferencedContainer = "container:SwiftKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -37,10 +37,10 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit.framework"
-            BlueprintName = "SwiftKit"
+            BuildableName = "SwiftKit-iOS.framework"
+            BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,11 +66,11 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit.framework"
-            BlueprintName = "SwiftKit"
+            BuildableName = "SwiftKit-iOS.framework"
+            BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,17 +88,17 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit.framework"
-            BlueprintName = "SwiftKit"
+            BuildableName = "SwiftKit-iOS.framework"
+            BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
