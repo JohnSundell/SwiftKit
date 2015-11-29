@@ -129,6 +129,7 @@
 		52F515721C051B7500AA6895 /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
 		52F515731C051B7500AA6895 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9141BEE5C15002C0205 /* Unwrap.swift */; };
 		52F515881C0523AB00AA6895 /* NSView+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */; };
+		52F5158E1C0637E600AA6895 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5158D1C0637E600AA6895 /* LocalizedString.swift */; };
 		52F515901C063DA000AA6895 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5158F1C063DA000AA6895 /* Shape.swift */; };
 		52F515921C063EF300AA6895 /* Shape+NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515911C063EF300AA6895 /* Shape+NSImage.swift */; };
 		52F515941C0641B200AA6895 /* CGContext+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515931C0641B200AA6895 /* CGContext+SwiftKit.swift */; };
@@ -198,6 +199,7 @@
 		52F5154D1C051B0100AA6895 /* OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OSX.plist; sourceTree = "<group>"; };
 		52F5154E1C051B0100AA6895 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
 		52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+SwiftKit.swift"; sourceTree = "<group>"; };
+		52F5158D1C0637E600AA6895 /* LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		52F5158F1C063DA000AA6895 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		52F515911C063EF300AA6895 /* Shape+NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shape+NSImage.swift"; sourceTree = "<group>"; };
 		52F515931C0641B200AA6895 /* CGContext+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+SwiftKit.swift"; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
+				52F5158D1C0637E600AA6895 /* LocalizedString.swift */,
 				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
@@ -500,6 +503,7 @@
 				52F5156B1C051B7500AA6895 /* RawRepresentable+SwiftKit.swift in Sources */,
 				52F5155E1C051B7500AA6895 /* EnumIterator.swift in Sources */,
 				52F5155F1C051B7500AA6895 /* EnumMap.swift in Sources */,
+				52F5158E1C0637E600AA6895 /* LocalizedString.swift in Sources */,
 				52F5155A1C051B7500AA6895 /* Dictionary+SwiftKit.swift in Sources */,
 				52F515701C051B7500AA6895 /* String+SwiftKit.swift in Sources */,
 				52F515681C051B7500AA6895 /* Probability.swift in Sources */,
