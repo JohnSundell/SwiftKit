@@ -11,6 +11,8 @@ public struct Shape {
     public var lineWidth: CGFloat
     /// The total size of the shape, in which all of its lines will fit
     public private(set) var size: CGSize
+    /// The point at which the shape is first drawn at
+    public private(set) var originPoint: CGPoint
     /// The current point that the shape is being drawn at
     public private(set) var currentPoint: CGPoint
     
@@ -21,8 +23,9 @@ public struct Shape {
         self.strokeColor = SKColor.clearColor()
         self.lineWidth = 1
         self.size = CGSize()
-        self.drawingOperations = []
+        self.originPoint = CGPoint()
         self.currentPoint = CGPoint()
+        self.drawingOperations = []
     }
     
     /// Move to a point in the shape (will set the `currentPoint` property)
@@ -32,28 +35,25 @@ public struct Shape {
     
     /// Add a line from the current point to a target point
     public mutating func addLineToPoint(point: CGPoint) {
-        if point.x > self.size.width {
-            self.size.width = point.x
-        }
-        
-        if point.y > self.size.height {
-            self.size.height = point.y
-        }
-        
-        self.appendDrawingOperation(.Line(from: self.currentPoint, to: point))
+        self.appendDrawingOperation(.LineTo(point), isDrawing: true)
     }
     
     /// Add a line by moving a certain distance in the shape
     public mutating func addLineByMovingByX(deltaX: CGFloat, y deltaY: CGFloat) {
-        let point = self.currentPoint.pointOffsetByX(deltaX, y: deltaY)
-        self.addLineToPoint(point)
+        self.appendDrawingOperation(.LineByMovingByX(deltaX, y: deltaY), isDrawing: true)
     }
     
     /// Close the shape, drawing a line to the origin point of the shape
     public mutating func close() {
-        if let firstOperation = self.drawingOperations.first {
-            self.addLineToPoint(firstOperation.originPoint)
-        }
+        self.appendDrawingOperation(.Close, isDrawing: true)
+    }
+    
+    /// Inset the shape, effectively adding padding on both sides in either dimension
+    public mutating func insetByX(x: CGFloat, y: CGFloat) {
+        self.drawingOperations.insert(.MoveTo(CGPoint(x: x, y: y)), atIndex: 0)
+        self.originPoint = self.originPoint.pointOffsetByX(x, y: y)
+        self.size.width += x * 2
+        self.size.height += y * 2
     }
     
     /// Generate a CGImage representation of the shape, using the size of the shape itself
@@ -67,12 +67,19 @@ public struct Shape {
         let yScale = size.height / self.size.height
         
         let context = CGContext.bitmapContextWithSize(size)
+        CGContextMoveToPoint(context, 0, 0)
         
         for operation in self.drawingOperations {
             switch operation {
-            case .Line(let from, let to):
-                CGContextMoveToPoint(context, from.x * xScale, from.y * yScale)
-                CGContextAddLineToPoint(context, to.x * xScale, to.y * yScale)
+            case .MoveTo(let point):
+                CGContextMoveToPoint(context, point.x * xScale, point.y * yScale)
+            case .LineTo(let point):
+                CGContextAddLineToPoint(context, point.x * xScale, point.y * yScale)
+            case .LineByMovingByX(let x, let y):
+                let targetPoint = CGContextGetPathCurrentPoint(context).pointOffsetByX(x * xScale, y: y * yScale)
+                CGContextAddLineToPoint(context, targetPoint.x, targetPoint.y)
+            case .Close:
+                CGContextAddLineToPoint(context, self.originPoint.x * xScale, self.originPoint.y * yScale)
             }
         }
         
@@ -83,30 +90,56 @@ public struct Shape {
         return CGBitmapContextCreateImage(context)
     }
     
-    private mutating func appendDrawingOperation(operation: ShapeDrawingOperation) {
+    private mutating func appendDrawingOperation(operation: ShapeDrawingOperation, isDrawing: Bool) {
+        if isDrawing && self.drawingOperations.isEmpty {
+            self.originPoint = self.currentPoint
+        }
+        
+        let targetPoint = operation.targetPointWithOperationOriginPoint(self.currentPoint, shapeOriginPoint: self.originPoint)
+        
+        if isDrawing {
+            if self.currentPoint.x > self.size.width {
+                self.size.width = self.currentPoint.x
+            }
+            
+            if self.currentPoint.y > self.size.height {
+                self.size.height = self.currentPoint.y
+            }
+            
+            if targetPoint.x > self.size.width {
+                self.size.width = targetPoint.x
+            }
+            
+            if targetPoint.y > self.size.height {
+                self.size.height = targetPoint.y
+            }
+        }
+        
         self.drawingOperations.append(operation)
-        self.currentPoint = operation.endPoint
+        self.currentPoint = targetPoint
     }
 }
 
 // MARK: - Private
 
 private enum ShapeDrawingOperation {
-    case Line(from: CGPoint, to: CGPoint)
+    case MoveTo(CGPoint)
+    case LineTo(CGPoint)
+    case LineByMovingByX(CGFloat, y: CGFloat)
+    case Close
 }
 
 extension ShapeDrawingOperation {
-    var originPoint: CGPoint {
+    func targetPointWithOperationOriginPoint(operationOriginPoint: CGPoint, shapeOriginPoint: CGPoint) -> CGPoint {
         switch self {
-        case .Line(let from, _):
-            return from
-        }
-    }
-    
-    var endPoint: CGPoint {
-        switch self {
-        case .Line(_, let to):
-            return to
+        case .MoveTo(let point):
+            return point
+        case .LineTo(let point):
+            return point
+        case .LineByMovingByX(let x, let y):
+            return operationOriginPoint.pointOffsetByX(x, y: y)
+        case .Close:
+            return shapeOriginPoint
         }
     }
 }
