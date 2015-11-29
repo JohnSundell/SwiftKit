@@ -22,4 +22,10 @@ public extension NSView {
             self.layer?.backgroundColor = color.CGColor
         }
     }
+    
+    /// Adjust the view's autoreiszing mask to have both a flexible width and height
+    public func setFlexibleSizeAutoresizingMask() {
+        self.autoresizingMask.insert(.ViewWidthSizable)
+        self.autoresizingMask.insert(.ViewHeightSizable)
+    }
 }
