@@ -129,6 +129,7 @@
 		52F515721C051B7500AA6895 /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
 		52F515731C051B7500AA6895 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9141BEE5C15002C0205 /* Unwrap.swift */; };
 		52F515881C0523AB00AA6895 /* NSView+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */; };
+		52F515941C0641B200AA6895 /* CGContext+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F515931C0641B200AA6895 /* CGContext+SwiftKit.swift */; };
 		52FDA7341B0E916700C9C808 /* SwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FDA7281B0E916700C9C808 /* SwiftKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +196,7 @@
 		52F5154D1C051B0100AA6895 /* OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OSX.plist; sourceTree = "<group>"; };
 		52F5154E1C051B0100AA6895 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
 		52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+SwiftKit.swift"; sourceTree = "<group>"; };
+		52F515931C0641B200AA6895 /* CGContext+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+SwiftKit.swift"; sourceTree = "<group>"; };
 		52FDA7281B0E916700C9C808 /* SwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FDA7331B0E916700C9C808 /* SwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -245,6 +247,7 @@
 				52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */,
 				52D6D9001BEE5C15002C0205 /* Axis.swift */,
 				52D6D9011BEE5C15002C0205 /* Calculate.swift */,
+				52F515931C0641B200AA6895 /* CGContext+SwiftKit.swift */,
 				52D6D9021BEE5C15002C0205 /* CGPoint+SwiftKit.swift */,
 				52D6D9031BEE5C15002C0205 /* CGRect+SwiftKit.swift */,
 				52D6D9041BEE5C15002C0205 /* CGSize+SwiftKit.swift */,
@@ -515,6 +518,7 @@
 				52F515541C051B7500AA6895 /* ArrayDictionary.swift in Sources */,
 				52F5156E1C051B7500AA6895 /* Serialize.swift in Sources */,
 				52F5155C1C051B7500AA6895 /* Dispatch.swift in Sources */,
+				52F515941C0641B200AA6895 /* CGContext+SwiftKit.swift in Sources */,
 				52F515601C051B7500AA6895 /* Flow.swift in Sources */,
 				52F5156A1C051B7500AA6895 /* Randomizable.swift in Sources */,
 				52F515531C051B7500AA6895 /* Array+SwiftKit.swift in Sources */,
