@@ -43,6 +43,19 @@ public struct Shape {
         self.appendDrawingOperation(.LineByMovingByX(deltaX, y: deltaY), isDrawing: true)
     }
     
+    /// Add a rectangle with a certain size
+    public mutating func addRectangleWithWidth(width: CGFloat, height: CGFloat) {
+        self.appendDrawingOperation(.LineByMovingByX(0, y: height), isDrawing: true)
+        self.appendDrawingOperation(.LineByMovingByX(width, y: 0), isDrawing: true)
+        self.appendDrawingOperation(.LineByMovingByX(0, y: -height), isDrawing: true)
+        self.appendDrawingOperation(.LineByMovingByX(-width, y: 0), isDrawing: true)
+    }
+    
+    /// Add a square with a certain size
+    public mutating func addSquareWithSize(size: CGFloat) {
+        self.addRectangleWithWidth(size, height: size)
+    }
+    
     /// Close the shape, drawing a line to the origin point of the shape
     public mutating func close() {
         self.appendDrawingOperation(.Close, isDrawing: true)
