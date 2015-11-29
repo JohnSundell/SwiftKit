@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-               BuildableName = "SwiftKit-iOS.framework"
+               BuildableName = "SwiftKit.framework"
                BlueprintName = "SwiftKit-iOS"
                ReferencedContainer = "container:SwiftKit.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit-iOS.framework"
+            BuildableName = "SwiftKit.framework"
             BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit-iOS.framework"
+            BuildableName = "SwiftKit.framework"
             BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
@@ -97,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52FDA7271B0E916700C9C808"
-            BuildableName = "SwiftKit-iOS.framework"
+            BuildableName = "SwiftKit.framework"
             BlueprintName = "SwiftKit-iOS"
             ReferencedContainer = "container:SwiftKit.xcodeproj">
          </BuildableReference>
