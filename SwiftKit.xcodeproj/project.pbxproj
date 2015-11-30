@@ -15,6 +15,9 @@
 		528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D31B210E6500AC1220 /* UnboxTests.swift */; };
 		5294C6731C0B47FD0035BE4F /* NSError+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */; };
 		5294C6741C0B48970035BE4F /* NSError+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */; };
+		5294C69C1C0CD4C60035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
+		5294C69F1C0CDDD80035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
+		5294C6A01C0CDDD80035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
 		529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
@@ -155,6 +158,7 @@
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
 		5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+SwiftKit.swift"; sourceTree = "<group>"; };
+		5294C69B1C0CD4C60035BE4F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftKit.swift"; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		52CA89871B6D8BF4003DC193 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 				5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
+				5294C69B1C0CD4C60035BE4F /* Event.swift */,
 				52D6D9621BEFCEDC002C0205 /* Position.swift */,
 				52E0E7F01BF7B791001E321E /* Probability.swift */,
 				52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */,
@@ -510,6 +515,7 @@
 				52F5155F1C051B7500AA6895 /* EnumMap.swift in Sources */,
 				52F5158E1C0637E600AA6895 /* LocalizedString.swift in Sources */,
 				52F5155A1C051B7500AA6895 /* Dictionary+SwiftKit.swift in Sources */,
+				5294C69F1C0CDDD80035BE4F /* Event.swift in Sources */,
 				52F515701C051B7500AA6895 /* String+SwiftKit.swift in Sources */,
 				52F515681C051B7500AA6895 /* Probability.swift in Sources */,
 				52F5156C1C051B7500AA6895 /* Repeat.swift in Sources */,
@@ -559,6 +565,7 @@
 				52D6D9211BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
 				52D6D9331BEE5C15002C0205 /* Identifier.swift in Sources */,
 				52D6D91B1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
+				5294C69C1C0CD4C60035BE4F /* Event.swift in Sources */,
 				52D6D9351BEE5C15002C0205 /* Number.swift in Sources */,
 				52D6D9291BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9391BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift in Sources */,
@@ -611,6 +618,7 @@
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
 				52D6D91C1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
 				52E0E7F51BF7B904001E321E /* Unbox+SwiftKit.swift in Sources */,
+				5294C6A01C0CDDD80035BE4F /* Event.swift in Sources */,
 				52D6D93E1BEE5C15002C0205 /* Serializable.swift in Sources */,
 				52D6D9491BEE5C2E002C0205 /* Unbox.swift in Sources */,
 				52E0E7E81BF7B130001E321E /* KeyedCollection.swift in Sources */,
