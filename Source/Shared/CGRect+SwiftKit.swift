@@ -34,4 +34,26 @@ public extension CGRect {
         rect.size = size
         return rect
     }
+    
+    /// Create a new rect by changing this rect's width
+    func rectWithWidth(width: CGFloat) -> CGRect {
+        var rect = self
+        rect.size.width = width
+        return rect
+    }
+    
+    /// Create a new rect by changing this rect's height
+    func rectWithHeight(height: CGFloat) -> CGRect {
+        var rect = self
+        rect.size.height = height
+        return rect
+    }
+    
+    /// Create a new rect by resizing this rect
+    func resizedRectByX(widthChange: CGFloat, y heightChange: CGFloat) -> CGRect {
+        var rect = self
+        rect.size.width += widthChange
+        rect.size.height += heightChange
+        return rect
+    }
 }
