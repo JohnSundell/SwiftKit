@@ -18,6 +18,11 @@
 		5294C69C1C0CD4C60035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
 		5294C69F1C0CDDD80035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
 		5294C6A01C0CDDD80035BE4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C69B1C0CD4C60035BE4F /* Event.swift */; };
+		5294C6AE1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */; };
+		5294C6AF1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */; };
+		5294C6B01C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */; };
+		5294C6B71C0D1A2F0035BE4F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6B51C0D1A2F0035BE4F /* Typealiases.swift */; };
+		5294C6BA1C0D1A630035BE4F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6B91C0D1A630035BE4F /* Typealiases.swift */; };
 		529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
@@ -159,6 +164,9 @@
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
 		5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+SwiftKit.swift"; sourceTree = "<group>"; };
 		5294C69B1C0CD4C60035BE4F /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+SwiftKit.swift"; sourceTree = "<group>"; };
+		5294C6B51C0D1A2F0035BE4F /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		5294C6B91C0D1A630035BE4F /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftKit.swift"; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		52CA89871B6D8BF4003DC193 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
@@ -245,6 +253,7 @@
 			children = (
 				52CA89871B6D8BF4003DC193 /* Animate.swift */,
 				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
+				5294C6B91C0D1A630035BE4F /* Typealiases.swift */,
 				529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */,
 				52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */,
 			);
@@ -276,6 +285,7 @@
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
 				52F5158D1C0637E600AA6895 /* LocalizedString.swift */,
 				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
+				5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */,
 				5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
@@ -313,6 +323,7 @@
 			children = (
 				52F515871C0523AB00AA6895 /* NSView+SwiftKit.swift */,
 				52F515911C063EF300AA6895 /* Shape+NSImage.swift */,
+				5294C6B51C0D1A2F0035BE4F /* Typealiases.swift */,
 			);
 			path = OSX;
 			sourceTree = "<group>";
@@ -506,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F515731C051B7500AA6895 /* Unwrap.swift in Sources */,
+				5294C6B71C0D1A2F0035BE4F /* Typealiases.swift in Sources */,
 				52F515691C051B7500AA6895 /* Quantifiable.swift in Sources */,
 				52F515641C051B7500AA6895 /* LoopableEnum.swift in Sources */,
 				52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */,
@@ -541,6 +553,7 @@
 				52F515541C051B7500AA6895 /* ArrayDictionary.swift in Sources */,
 				52F5156E1C051B7500AA6895 /* Serialize.swift in Sources */,
 				52F5155C1C051B7500AA6895 /* Dispatch.swift in Sources */,
+				5294C6AF1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
 				52F515941C0641B200AA6895 /* CGContext+SwiftKit.swift in Sources */,
 				52F515601C051B7500AA6895 /* Flow.swift in Sources */,
 				52F5156A1C051B7500AA6895 /* Randomizable.swift in Sources */,
@@ -592,8 +605,10 @@
 				52D6D91F1BEE5C15002C0205 /* Calculate.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				5294C6731C0B47FD0035BE4F /* NSError+SwiftKit.swift in Sources */,
+				5294C6AE1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
 				52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */,
 				52E0E7DB1BF78C04001E321E /* KeyedCollection.swift in Sources */,
+				5294C6BA1C0D1A630035BE4F /* Typealiases.swift in Sources */,
 				52D6D9251BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +641,7 @@
 				52F5154F1C051B6E00AA6895 /* Animate.swift in Sources */,
 				521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */,
 				52D6D91E1BEE5C15002C0205 /* Axis.swift in Sources */,
+				5294C6B01C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
 				52D6D9241BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
 				52D6D9301BEE5C15002C0205 /* EnumMap.swift in Sources */,
 				52D6D9201BEE5C15002C0205 /* Calculate.swift in Sources */,
