@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 /// Unbox a local JSON file with a contextual object
 public func UnboxLocalFileWithName<T: UnboxableWithContext>(fileName: String, context: T.ContextType) -> T? {
@@ -11,4 +12,14 @@ public func UnboxLocalFileWithName<T: UnboxableWithContext>(fileName: String, co
     }
     
     return Unbox(data, context: context)
+}
+
+/// Extension making CGSize Unboxable
+extension CGSize: Unboxable {
+    public init(unboxer: Unboxer) {
+        self.init(
+            width: unboxer.unbox("width") as CGFloat,
+            height: unboxer.unbox("height") as CGFloat
+        )
+    }
 }
