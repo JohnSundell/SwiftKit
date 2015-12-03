@@ -23,6 +23,7 @@
 		5294C6B01C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */; };
 		5294C6B71C0D1A2F0035BE4F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6B51C0D1A2F0035BE4F /* Typealiases.swift */; };
 		5294C6BA1C0D1A630035BE4F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6B91C0D1A630035BE4F /* Typealiases.swift */; };
+		5294C6C81C0F81BD0035BE4F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6B91C0D1A630035BE4F /* Typealiases.swift */; };
 		529DCE3F1B88F5900009A8A4 /* UIImage+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
@@ -619,6 +620,7 @@
 			files = (
 				52D6D9381BEE5C15002C0205 /* Quantifiable.swift in Sources */,
 				52D6D92E1BEE5C15002C0205 /* EnumIterator.swift in Sources */,
+				5294C6C81C0F81BD0035BE4F /* Typealiases.swift in Sources */,
 				527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				52D6D93A1BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift in Sources */,
 				52D6D9161BEE5C15002C0205 /* AnyOf.swift in Sources */,
