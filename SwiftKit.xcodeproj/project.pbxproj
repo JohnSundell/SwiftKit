@@ -12,6 +12,8 @@
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
+		528C48751C14EF5F005F679D /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C48731C14EE98005F679D /* Require.swift */; };
+		528C48761C14EF60005F679D /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C48731C14EE98005F679D /* Require.swift */; };
 		528CE0D41B210E6500AC1220 /* UnboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528CE0D31B210E6500AC1220 /* UnboxTests.swift */; };
 		5294C6731C0B47FD0035BE4F /* NSError+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */; };
 		5294C6741C0B48970035BE4F /* NSError+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */; };
@@ -162,6 +164,7 @@
 		521770BC1B7129B6005FD2C9 /* SetMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMapTests.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
+		528C48731C14EE98005F679D /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
 		528CE0D31B210E6500AC1220 /* UnboxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnboxTests.swift; path = Unbox/UnboxTests.swift; sourceTree = SOURCE_ROOT; };
 		5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+SwiftKit.swift"; sourceTree = "<group>"; };
 		5294C69B1C0CD4C60035BE4F /* Emitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
@@ -297,6 +300,7 @@
 				52E0E7F61BF7C3DE001E321E /* Randomizable.swift */,
 				52D6D90E1BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift */,
 				52D6D90F1BEE5C15002C0205 /* Repeat.swift */,
+				528C48731C14EE98005F679D /* Require.swift */,
 				52D6D9101BEE5C15002C0205 /* Serializable.swift */,
 				52D6D9111BEE5C15002C0205 /* Serialize.swift */,
 				52D6D9121BEE5C15002C0205 /* SetMap.swift */,
@@ -522,6 +526,7 @@
 				52F515691C051B7500AA6895 /* Quantifiable.swift in Sources */,
 				52F515641C051B7500AA6895 /* LoopableEnum.swift in Sources */,
 				52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */,
+				528C48751C14EF5F005F679D /* Require.swift in Sources */,
 				52F5156B1C051B7500AA6895 /* RawRepresentable+SwiftKit.swift in Sources */,
 				52F5155E1C051B7500AA6895 /* EnumIterator.swift in Sources */,
 				5294C6741C0B48970035BE4F /* NSError+SwiftKit.swift in Sources */,
@@ -577,6 +582,7 @@
 				52D6D9171BEE5C15002C0205 /* AreaNode.swift in Sources */,
 				52D6D9151BEE5C15002C0205 /* AnyOf.swift in Sources */,
 				52D6D9211BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
+				528C48761C14EF60005F679D /* Require.swift in Sources */,
 				52D6D9331BEE5C15002C0205 /* Identifier.swift in Sources */,
 				52D6D91B1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
 				5294C69C1C0CD4C60035BE4F /* Emitter.swift in Sources */,
