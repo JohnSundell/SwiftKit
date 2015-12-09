@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */; };
 		521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BC1B7129B6005FD2C9 /* SetMapTests.swift */; };
+		521F3C821C18CF520088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
+		521F3C831C18CFB60088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
@@ -166,6 +168,7 @@
 /* Begin PBXFileReference section */
 		520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		521770BC1B7129B6005FD2C9 /* SetMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMapTests.swift; sourceTree = "<group>"; };
+		521F3C811C18CF520088124B /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528C486D1C14E95F005F679D /* Wrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wrap.swift; path = Wrap/Wrap.swift; sourceTree = SOURCE_ROOT; };
@@ -292,6 +295,7 @@
 				52D6D9091BEE5C15002C0205 /* EnumMap.swift */,
 				52D6D94A1BEE5C91002C0205 /* Flow.swift */,
 				52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */,
+				521F3C811C18CF520088124B /* Identifiable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
 				52F5158D1C0637E600AA6895 /* LocalizedString.swift */,
@@ -575,6 +579,7 @@
 				52F515511C051B7500AA6895 /* AnyOf.swift in Sources */,
 				52F5156F1C051B7500AA6895 /* SetMap.swift in Sources */,
 				528C486F1C14E95F005F679D /* Wrap.swift in Sources */,
+				521F3C831C18CFB60088124B /* Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +624,7 @@
 				52D6D92D1BEE5C15002C0205 /* EnumIterator.swift in Sources */,
 				52D6D93D1BEE5C15002C0205 /* Serializable.swift in Sources */,
 				52E0E7E41BF7AF87001E321E /* MutableIndexedCollectionType.swift in Sources */,
+				521F3C821C18CF520088124B /* Identifiable.swift in Sources */,
 				52D6D91F1BEE5C15002C0205 /* Calculate.swift in Sources */,
 				527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */,
 				5294C6731C0B47FD0035BE4F /* NSError+SwiftKit.swift in Sources */,
