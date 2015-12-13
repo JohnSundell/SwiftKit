@@ -7,6 +7,19 @@ public extension RawRepresentable where RawValue: Number, Self:Hashable {
         EnumIterator.iterate(closure)
     }
     
+    /// Count the members of this enum, by iterating through each member
+    public static func count() -> Int {
+        var count = 0
+        var member = Self(rawValue: RawValue(0))
+        
+        while let currentMember = member {
+            count++
+            member = currentMember.next()
+        }
+        
+        return count
+    }
+    
     /// Go to the next member of the enum
     public func next() -> Self? {
         return Self(rawValue: RawValue(self.rawValue.toDouble() + 1))
