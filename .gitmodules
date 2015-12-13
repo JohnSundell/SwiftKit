@@ -4,3 +4,6 @@
 [submodule "Flow"]
 	path = Flow
 	url = git@github.com:JohnSundell/Flow.git
+[submodule "Wrap"]
+	path = Wrap
+	url = git@github.com:JohnSundell/Wrap.git
