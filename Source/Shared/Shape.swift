@@ -5,8 +5,8 @@ import SpriteKit
 
 /// Structure that acts as a high-level wrapper of Core Graphics' drawing APIs
 public struct Shape {
-    /// The color the lines of the shape should be stroked with
-    public var strokeColor: SKColor
+    /// The color of the shape
+    public var color: SKColor
     /// The width of the shape's lines
     public var lineWidth: CGFloat
     /// The total size of the shape, in which all of its lines will fit
@@ -18,9 +18,9 @@ public struct Shape {
     
     private var drawingOperations: [ShapeDrawingOperation]
     
-    /// Create a new instance of Shape, it won't have a stroke color and a 1 line width
+    /// Create a new instance of Shape, it won't have a color and a 1 line width
     public init() {
-        self.strokeColor = SKColor.clearColor()
+        self.color = SKColor.clearColor()
         self.lineWidth = 1
         self.size = CGSize()
         self.originPoint = CGPoint()
@@ -44,16 +44,13 @@ public struct Shape {
     }
     
     /// Add a rectangle with a certain size
-    public mutating func addRectangleWithWidth(width: CGFloat, height: CGFloat) {
-        self.appendDrawingOperation(.LineByMovingByX(0, y: height), isDrawing: true)
-        self.appendDrawingOperation(.LineByMovingByX(width, y: 0), isDrawing: true)
-        self.appendDrawingOperation(.LineByMovingByX(0, y: -height), isDrawing: true)
-        self.appendDrawingOperation(.LineByMovingByX(-width, y: 0), isDrawing: true)
+    public mutating func addRectangleWithWidth(width: CGFloat, height: CGFloat, fill: Bool = false) {
+        self.appendDrawingOperation(.RectWithWidth(width, height: height, fill: fill), isDrawing: true)
     }
     
     /// Add a square with a certain size
-    public mutating func addSquareWithSize(size: CGFloat) {
-        self.addRectangleWithWidth(size, height: size)
+    public mutating func addSquareWithSize(size: CGFloat, fill: Bool = false) {
+        self.addRectangleWithWidth(size, height: size, fill: fill)
     }
     
     /// Close the shape, drawing a line to the origin point of the shape
@@ -80,7 +77,11 @@ public struct Shape {
         let yScale = size.height / self.size.height
         
         let context = CGContext.bitmapContextWithSize(size)
+        CGContextSetStrokeColorWithColor(context, self.color.CGColor)
+        CGContextSetFillColorWithColor(context, self.color.CGColor)
         CGContextMoveToPoint(context, 0, 0)
+        
+        var rectsToFill = [CGRect]()
         
         for operation in self.drawingOperations {
             switch operation {
@@ -91,14 +92,25 @@ public struct Shape {
             case .LineByMovingByX(let x, let y):
                 let targetPoint = CGContextGetPathCurrentPoint(context).pointOffsetByX(x * xScale, y: y * yScale)
                 CGContextAddLineToPoint(context, targetPoint.x, targetPoint.y)
+            case .RectWithWidth(let width, let height, let fill):
+                let rect = CGRect(
+                    origin: CGContextGetPathCurrentPoint(context),
+                    size: CGSize(width: width * xScale, height: height * yScale)
+                )
+                
+                CGContextAddRect(context, rect)
+                
+                if fill {
+                    rectsToFill.append(rect)
+                }
             case .Close:
                 CGContextAddLineToPoint(context, self.originPoint.x * xScale, self.originPoint.y * yScale)
             }
         }
         
-        CGContextSetStrokeColorWithColor(context, self.strokeColor.CGColor)
         CGContextSetLineWidth(context, self.lineWidth)
         CGContextStrokePath(context)
+        CGContextFillRects(context, rectsToFill, rectsToFill.count)
         
         return CGBitmapContextCreateImage(context)
     }
@@ -139,6 +151,7 @@ private enum ShapeDrawingOperation {
     case MoveTo(CGPoint)
     case LineTo(CGPoint)
     case LineByMovingByX(CGFloat, y: CGFloat)
+    case RectWithWidth(CGFloat, height: CGFloat, fill: Bool)
     case Close
 }
 
@@ -151,6 +164,8 @@ extension ShapeDrawingOperation {
             return point
         case .LineByMovingByX(let x, let y):
             return operationOriginPoint.pointOffsetByX(x, y: y)
+        case .RectWithWidth(let width, let height, _):
+            return operationOriginPoint.pointOffsetByX(width, y: height)
         case .Close:
             return shapeOriginPoint
         }
