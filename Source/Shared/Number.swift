@@ -10,18 +10,23 @@ public protocol Number: Quantifiable {
 }
 
 /// Addition support for Number types
-public func +<T: Number>(lhs: T, rhs: T) -> T {
+public func +<T: Number>(lhs: Number, rhs: Number) -> T {
     return T(lhs.toDouble() + rhs.toDouble())
 }
 
 /// Subtraction support for Number types
-public func -<T: Number>(lhs: T, rhs: T) -> T {
+public func -<T: Number>(lhs: Number, rhs: Number) -> T {
     return T(lhs.toDouble() - rhs.toDouble())
 }
 
 /// Multiplication support for Number types
-public func *<T: Number>(lhs: T, rhs: T) -> T {
+public func *<T: Number>(lhs: Number, rhs: Number) -> T {
     return T(lhs.toDouble() * rhs.toDouble())
+}
+
+/// Division support for Number types
+public func /<T: Number>(lhs: Number, rhs: Number) -> T {
+    return T(lhs.toDouble() / rhs.toDouble())
 }
 
 /// Postfix increment support for Number types
