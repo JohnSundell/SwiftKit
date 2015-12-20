@@ -46,6 +46,9 @@ public extension Number {
     /// The fractional part of the number's value
     public var fractionalValue: Self { return self - self.floor() }
     
+    /// The absolute value for this number
+    public var absoluteValue: Self { return Self(abs(self.toDouble())) }
+    
     /// Return a value that is the result of flooring this value
     public func floor() -> Self {
         return Self(Foundation.floor(self.toDouble()))
