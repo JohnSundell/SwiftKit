@@ -2,9 +2,9 @@ import CoreGraphics
 
 /// SwiftKit extensions to CGPoint
 public extension CGPoint {
-    /// Return the absolute distance between this point and another
-    public func distanceToPoint(point: CGPoint) -> CGFloat {
-        return sqrt(pow(abs(self.x - point.x), 2) + pow(abs(self.y - point.y), 2))
+    /// Return the distance (in form of a vector) between this point and another
+    public func distanceToPoint(point: CGPoint) -> CGVector {
+        return CGVector(dx: point.x - self.x, dy: point.y - self.y)
     }
     
     /// Return a new point by offsetting this point by a x and y value
