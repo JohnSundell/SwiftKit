@@ -8,3 +8,12 @@ public func Require<T>(optional: Optional<T>) throws -> T {
     
     return value
 }
+
+/// Require that a value is not nil, and that it may be cast to another type, or throw an NSError
+public func RequireAndCast<A, B>(value: A?) throws -> B {
+    guard let value = try Require(value) as? B else {
+        throw NSError(name: "Could not perform cast")
+    }
+    
+    return value
+}
