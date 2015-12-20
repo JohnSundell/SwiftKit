@@ -39,6 +39,7 @@
 		52BD42A51C262E4B006B847B /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD42A41C262E4B006B847B /* CoordinateSystem.swift */; };
 		52BD42A61C262E4B006B847B /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD42A41C262E4B006B847B /* CoordinateSystem.swift */; };
 		52BD42A71C262E4B006B847B /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD42A41C262E4B006B847B /* CoordinateSystem.swift */; };
+		52BD42AB1C2633C9006B847B /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD42A81C2633C9006B847B /* DirectionTests.swift */; };
 		52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */; };
 		52CA89881B6D8BF4003DC193 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA89871B6D8BF4003DC193 /* Animate.swift */; };
 		52D6D8C61BE92DAD002C0205 /* NumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8C41BE92DA2002C0205 /* NumberTests.swift */; };
@@ -189,6 +190,7 @@
 		529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftKit.swift"; sourceTree = "<group>"; };
 		52BD42A01C25D85F006B847B /* CGVector+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+SwiftKit.swift"; sourceTree = "<group>"; };
 		52BD42A41C262E4B006B847B /* CoordinateSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		52BD42A81C2633C9006B847B /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		52CA89871B6D8BF4003DC193 /* Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		52D6D8C41BE92DA2002C0205 /* NumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTests.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				52436BE11B79672000570956 /* AnyOfTests.swift */,
 				52D6D8C41BE92DA2002C0205 /* NumberTests.swift */,
 				528C48711C14E96E005F679D /* WrapTests.swift */,
+				52BD42A81C2633C9006B847B /* DirectionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 				52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */,
 				52D6D9421BEE5C15002C0205 /* SetMap.swift in Sources */,
 				528C48701C14E95F005F679D /* Wrap.swift in Sources */,
+				52BD42AB1C2633C9006B847B /* DirectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

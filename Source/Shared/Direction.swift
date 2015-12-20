@@ -6,6 +6,8 @@ public protocol DirectionType: LoopableEnum {
     func nextClockwiseDirection() -> Self
     /// Return the next counter clockwise direction
     func nextCounterClockwiseDirection() -> Self
+    /// Return the opposite direction
+    func oppositeDirection() -> Self
 }
 
 /// Structure acting as a namespace for enums describing directions
@@ -64,5 +66,16 @@ public extension DirectionType where RawValue: Number {
     
     func nextCounterClockwiseDirection() -> Self {
         return self.previous()
+    }
+    
+    func oppositeDirection() -> Self {
+        let numberOfDirections: Int = Self.lastValue().rawValue + 1
+        var direction = self
+        
+        Repeat(numberOfDirections / 2) {
+            direction = direction.nextCounterClockwiseDirection()
+        }
+        
+        return direction
     }
 }
