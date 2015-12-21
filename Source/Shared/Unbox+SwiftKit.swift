@@ -1,17 +1,14 @@
 import Foundation
 import CoreGraphics
 
-/// Unbox a local JSON file with a contextual object
-public func UnboxLocalFileWithName<T: UnboxableWithContext>(fileName: String, context: T.ContextType) -> T? {
-    guard let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json") else {
-        return nil
-    }
-    
-    guard let data = NSData(contentsOfFile: path) else {
-        return nil
-    }
-    
-    return Unbox(data, context: context)
+/// Unbox a local JSON file, or throw NSError (invalid data) or UnboxError (unboxing failed)
+public func UnboxLocalFileWithName<T: Unboxable>(fileName: String) throws -> T {
+    return try UnboxOrThrow(NSData(JSONFileNamed: fileName))
+}
+
+/// Unbox a local JSON file with a contextual object, or throw NSError (invalid data) or UnboxError (unboxing failed)
+public func UnboxLocalFileWithName<T: UnboxableWithContext>(fileName: String, context: T.ContextType) throws -> T {
+    return try UnboxOrThrow(NSData(JSONFileNamed: fileName), context: context)
 }
 
 /// Extension making CGSize Unboxable

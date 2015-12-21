@@ -113,6 +113,9 @@
 		52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52DA66D11C27842700092A26 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66CF1C27839900092A26 /* PositionTests.swift */; };
+		52DA66DC1C278B4300092A26 /* NSData+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */; };
+		52DA66DD1C278C9200092A26 /* NSData+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */; };
+		52DA66DE1C278C9200092A26 /* NSData+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52E0E7DB1BF78C04001E321E /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
 		52E0E7E41BF7AF87001E321E /* MutableIndexedCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */; };
@@ -237,6 +240,7 @@
 		52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableEnum.swift; sourceTree = "<group>"; };
 		52D6D9621BEFCEDC002C0205 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		52DA66CF1C27839900092A26 /* PositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
+		52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+SwiftKit.swift"; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedCollection.swift; sourceTree = "<group>"; };
 		52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableIndexedCollectionType.swift; sourceTree = "<group>"; };
@@ -326,6 +330,7 @@
 				52F5158D1C0637E600AA6895 /* LocalizedString.swift */,
 				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
 				5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */,
+				52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */,
 				5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
@@ -582,6 +587,7 @@
 				52F515661C051B7500AA6895 /* MutableIndexedCollectionType.swift in Sources */,
 				52BD42A61C262E4B006B847B /* CoordinateSystem.swift in Sources */,
 				52F515921C063EF300AA6895 /* Shape+NSImage.swift in Sources */,
+				52DA66DD1C278C9200092A26 /* NSData+SwiftKit.swift in Sources */,
 				52F515591C051B7500AA6895 /* CGSize+SwiftKit.swift in Sources */,
 				52F5156D1C051B7500AA6895 /* Serializable.swift in Sources */,
 				52F515901C063DA000AA6895 /* Shape.swift in Sources */,
@@ -652,6 +658,7 @@
 				52D6D91D1BEE5C15002C0205 /* Axis.swift in Sources */,
 				52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */,
 				52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */,
+				52DA66DC1C278B4300092A26 /* NSData+SwiftKit.swift in Sources */,
 				52D6D9311BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52E0E7F41BF7B903001E321E /* Unbox+SwiftKit.swift in Sources */,
 				52BD42F91C27127E006B847B /* Shape.swift in Sources */,
@@ -718,6 +725,7 @@
 				52BD42A71C262E4B006B847B /* CoordinateSystem.swift in Sources */,
 				52E0E7E71BF7B130001E321E /* EmptyInitializable.swift in Sources */,
 				52BD42F31C27127D006B847B /* LocalizedString.swift in Sources */,
+				52DA66DE1C278C9200092A26 /* NSData+SwiftKit.swift in Sources */,
 				52BD42F11C27127D006B847B /* CGContext+SwiftKit.swift in Sources */,
 				52D6D9221BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
 				52D6D9401BEE5C15002C0205 /* Serialize.swift in Sources */,
