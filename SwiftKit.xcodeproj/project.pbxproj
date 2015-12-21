@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */; };
-		521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521770BC1B7129B6005FD2C9 /* SetMapTests.swift */; };
+		5219BD311C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */; };
+		5219BD321C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */; };
+		5219BD331C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */; };
 		521F3C821C18CF520088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		521F3C831C18CFB60088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
+		526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		528C486E1C14E95F005F679D /* Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528C486D1C14E95F005F679D /* Wrap.swift */; };
@@ -59,8 +62,6 @@
 		52D6D9181BEE5C15002C0205 /* AreaNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FD1BEE5C15002C0205 /* AreaNode.swift */; };
 		52D6D9191BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FE1BEE5C15002C0205 /* Array+SwiftKit.swift */; };
 		52D6D91A1BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FE1BEE5C15002C0205 /* Array+SwiftKit.swift */; };
-		52D6D91B1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */; };
-		52D6D91C1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */; };
 		52D6D91D1BEE5C15002C0205 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9001BEE5C15002C0205 /* Axis.swift */; };
 		52D6D91E1BEE5C15002C0205 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9001BEE5C15002C0205 /* Axis.swift */; };
 		52D6D91F1BEE5C15002C0205 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9011BEE5C15002C0205 /* Calculate.swift */; };
@@ -97,8 +98,6 @@
 		52D6D93E1BEE5C15002C0205 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9101BEE5C15002C0205 /* Serializable.swift */; };
 		52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9111BEE5C15002C0205 /* Serialize.swift */; };
 		52D6D9401BEE5C15002C0205 /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9111BEE5C15002C0205 /* Serialize.swift */; };
-		52D6D9411BEE5C15002C0205 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9121BEE5C15002C0205 /* SetMap.swift */; };
-		52D6D9421BEE5C15002C0205 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9121BEE5C15002C0205 /* SetMap.swift */; };
 		52D6D9431BEE5C15002C0205 /* String+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */; };
 		52D6D9441BEE5C15002C0205 /* String+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */; };
 		52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9141BEE5C15002C0205 /* Unwrap.swift */; };
@@ -136,7 +135,6 @@
 		52F515511C051B7500AA6895 /* AnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FC1BEE5C15002C0205 /* AnyOf.swift */; };
 		52F515521C051B7500AA6895 /* AreaNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FD1BEE5C15002C0205 /* AreaNode.swift */; };
 		52F515531C051B7500AA6895 /* Array+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FE1BEE5C15002C0205 /* Array+SwiftKit.swift */; };
-		52F515541C051B7500AA6895 /* ArrayDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */; };
 		52F515551C051B7500AA6895 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9001BEE5C15002C0205 /* Axis.swift */; };
 		52F515561C051B7500AA6895 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9011BEE5C15002C0205 /* Calculate.swift */; };
 		52F515571C051B7500AA6895 /* CGPoint+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9021BEE5C15002C0205 /* CGPoint+SwiftKit.swift */; };
@@ -163,7 +161,6 @@
 		52F5156C1C051B7500AA6895 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90F1BEE5C15002C0205 /* Repeat.swift */; };
 		52F5156D1C051B7500AA6895 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9101BEE5C15002C0205 /* Serializable.swift */; };
 		52F5156E1C051B7500AA6895 /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9111BEE5C15002C0205 /* Serialize.swift */; };
-		52F5156F1C051B7500AA6895 /* SetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9121BEE5C15002C0205 /* SetMap.swift */; };
 		52F515701C051B7500AA6895 /* String+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */; };
 		52F515711C051B7500AA6895 /* Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9471BEE5C2E002C0205 /* Unbox.swift */; };
 		52F515721C051B7500AA6895 /* Unbox+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */; };
@@ -188,9 +185,10 @@
 
 /* Begin PBXFileReference section */
 		520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+SwiftKitTests.swift"; sourceTree = "<group>"; };
-		521770BC1B7129B6005FD2C9 /* SetMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMapTests.swift; sourceTree = "<group>"; };
+		5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+SwiftKit.swift"; sourceTree = "<group>"; };
 		521F3C811C18CF520088124B /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
+		526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528C486D1C14E95F005F679D /* Wrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wrap.swift; path = Wrap/Wrap.swift; sourceTree = SOURCE_ROOT; };
 		528C48711C14E96E005F679D /* WrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrapTests.swift; path = Wrap/WrapTests.swift; sourceTree = SOURCE_ROOT; };
@@ -212,7 +210,6 @@
 		52D6D8FC1BEE5C15002C0205 /* AnyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOf.swift; sourceTree = "<group>"; };
 		52D6D8FD1BEE5C15002C0205 /* AreaNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaNode.swift; sourceTree = "<group>"; };
 		52D6D8FE1BEE5C15002C0205 /* Array+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SwiftKit.swift"; sourceTree = "<group>"; };
-		52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDictionary.swift; sourceTree = "<group>"; };
 		52D6D9001BEE5C15002C0205 /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
 		52D6D9011BEE5C15002C0205 /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		52D6D9021BEE5C15002C0205 /* CGPoint+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+SwiftKit.swift"; sourceTree = "<group>"; };
@@ -231,7 +228,6 @@
 		52D6D90F1BEE5C15002C0205 /* Repeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repeat.swift; sourceTree = "<group>"; };
 		52D6D9101BEE5C15002C0205 /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		52D6D9111BEE5C15002C0205 /* Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
-		52D6D9121BEE5C15002C0205 /* SetMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMap.swift; sourceTree = "<group>"; };
 		52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SwiftKit.swift"; sourceTree = "<group>"; };
 		52D6D9141BEE5C15002C0205 /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		52D6D9471BEE5C2E002C0205 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
@@ -306,7 +302,6 @@
 				52D6D8FC1BEE5C15002C0205 /* AnyOf.swift */,
 				52D6D8FD1BEE5C15002C0205 /* AreaNode.swift */,
 				52D6D8FE1BEE5C15002C0205 /* Array+SwiftKit.swift */,
-				52D6D8FF1BEE5C15002C0205 /* ArrayDictionary.swift */,
 				52D6D9001BEE5C15002C0205 /* Axis.swift */,
 				52D6D9011BEE5C15002C0205 /* Calculate.swift */,
 				52BD42A41C262E4B006B847B /* CoordinateSystem.swift */,
@@ -334,6 +329,7 @@
 				5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */,
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
+				5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */,
 				52D6D9621BEFCEDC002C0205 /* Position.swift */,
 				52E0E7F01BF7B791001E321E /* Probability.swift */,
 				52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */,
@@ -343,7 +339,6 @@
 				528C48731C14EE98005F679D /* Require.swift */,
 				52D6D9101BEE5C15002C0205 /* Serializable.swift */,
 				52D6D9111BEE5C15002C0205 /* Serialize.swift */,
-				52D6D9121BEE5C15002C0205 /* SetMap.swift */,
 				52F5158F1C063DA000AA6895 /* Shape.swift */,
 				52D6D9131BEE5C15002C0205 /* String+SwiftKit.swift */,
 				52D6D9471BEE5C2E002C0205 /* Unbox.swift */,
@@ -412,13 +407,13 @@
 				528CE0D31B210E6500AC1220 /* UnboxTests.swift */,
 				52CA89821B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift */,
 				520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */,
-				521770BC1B7129B6005FD2C9 /* SetMapTests.swift */,
 				52436BE11B79672000570956 /* AnyOfTests.swift */,
 				52D6D8C41BE92DA2002C0205 /* NumberTests.swift */,
 				528C48711C14E96E005F679D /* WrapTests.swift */,
 				52BD42A81C2633C9006B847B /* DirectionTests.swift */,
 				52BD42ED1C271161006B847B /* RequireTests.swift */,
 				52DA66CF1C27839900092A26 /* PositionTests.swift */,
+				526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -581,6 +576,7 @@
 				5294C69F1C0CDDD80035BE4F /* Emitter.swift in Sources */,
 				52F515701C051B7500AA6895 /* String+SwiftKit.swift in Sources */,
 				52F515681C051B7500AA6895 /* Probability.swift in Sources */,
+				5219BD321C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */,
 				52F5156C1C051B7500AA6895 /* Repeat.swift in Sources */,
 				52F515581C051B7500AA6895 /* CGRect+SwiftKit.swift in Sources */,
 				52F515881C0523AB00AA6895 /* NSView+SwiftKit.swift in Sources */,
@@ -604,7 +600,6 @@
 				52F515621C051B7500AA6895 /* Identifier.swift in Sources */,
 				52F5155D1C051B7500AA6895 /* EmptyInitializable.swift in Sources */,
 				52F515551C051B7500AA6895 /* Axis.swift in Sources */,
-				52F515541C051B7500AA6895 /* ArrayDictionary.swift in Sources */,
 				52F5156E1C051B7500AA6895 /* Serialize.swift in Sources */,
 				52F5155C1C051B7500AA6895 /* Dispatch.swift in Sources */,
 				5294C6AF1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
@@ -613,7 +608,6 @@
 				52F5156A1C051B7500AA6895 /* Randomizable.swift in Sources */,
 				52F515531C051B7500AA6895 /* Array+SwiftKit.swift in Sources */,
 				52F515511C051B7500AA6895 /* AnyOf.swift in Sources */,
-				52F5156F1C051B7500AA6895 /* SetMap.swift in Sources */,
 				528C486F1C14E95F005F679D /* Wrap.swift in Sources */,
 				521F3C831C18CFB60088124B /* Identifiable.swift in Sources */,
 			);
@@ -631,11 +625,11 @@
 				52D6D9431BEE5C15002C0205 /* String+SwiftKit.swift in Sources */,
 				52E0E7F71BF7C3DE001E321E /* Randomizable.swift in Sources */,
 				52D6D9171BEE5C15002C0205 /* AreaNode.swift in Sources */,
+				5219BD311C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */,
 				52D6D9151BEE5C15002C0205 /* AnyOf.swift in Sources */,
 				52D6D9211BEE5C15002C0205 /* CGPoint+SwiftKit.swift in Sources */,
 				528C48761C14EF60005F679D /* Require.swift in Sources */,
 				52D6D9331BEE5C15002C0205 /* Identifier.swift in Sources */,
-				52D6D91B1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
 				528C486E1C14E95F005F679D /* Wrap.swift in Sources */,
 				52BD42F71C27127E006B847B /* CGContext+SwiftKit.swift in Sources */,
 				5294C69C1C0CD4C60035BE4F /* Emitter.swift in Sources */,
@@ -648,7 +642,6 @@
 				52D6D9231BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
 				52D6D9371BEE5C15002C0205 /* Quantifiable.swift in Sources */,
 				52BD42A11C25D85F006B847B /* CGVector+SwiftKit.swift in Sources */,
-				52D6D9411BEE5C15002C0205 /* SetMap.swift in Sources */,
 				52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */,
 				52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
@@ -699,7 +692,6 @@
 				52D6D9281BEE5C15002C0205 /* Dictionary+SwiftKit.swift in Sources */,
 				52DA66D11C27842700092A26 /* PositionTests.swift in Sources */,
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
-				52D6D91C1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
 				52E0E7F51BF7B904001E321E /* Unbox+SwiftKit.swift in Sources */,
 				5294C6A01C0CDDD80035BE4F /* Emitter.swift in Sources */,
 				52D6D93E1BEE5C15002C0205 /* Serializable.swift in Sources */,
@@ -707,16 +699,17 @@
 				52E0E7E81BF7B130001E321E /* KeyedCollection.swift in Sources */,
 				52F515501C051B6E00AA6895 /* UIImage+SwiftKit.swift in Sources */,
 				52F5154F1C051B6E00AA6895 /* Animate.swift in Sources */,
-				521770BE1B7129DF005FD2C9 /* SetMapTests.swift in Sources */,
 				52BD42A31C25D85F006B847B /* CGVector+SwiftKit.swift in Sources */,
 				52D6D91E1BEE5C15002C0205 /* Axis.swift in Sources */,
 				5294C6B01C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
 				52D6D9241BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
+				526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */,
 				52D6D9301BEE5C15002C0205 /* EnumMap.swift in Sources */,
 				52D6D9201BEE5C15002C0205 /* Calculate.swift in Sources */,
 				52D6D9181BEE5C15002C0205 /* AreaNode.swift in Sources */,
 				52D6D94C1BEE5C91002C0205 /* Flow.swift in Sources */,
 				520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */,
+				5219BD331C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */,
 				52D6D92A1BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52D6D9261BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
@@ -741,7 +734,6 @@
 				52D6D91A1BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */,
 				52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */,
 				52BD42F21C27127D006B847B /* Identifiable.swift in Sources */,
-				52D6D9421BEE5C15002C0205 /* SetMap.swift in Sources */,
 				52BD42F41C27127D006B847B /* NSError+SwiftKit.swift in Sources */,
 				52BD42F01C271161006B847B /* RequireTests.swift in Sources */,
 				528C48701C14E95F005F679D /* Wrap.swift in Sources */,
