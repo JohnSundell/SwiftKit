@@ -112,6 +112,7 @@
 		52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
 		52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
+		52DA66D11C27842700092A26 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66CF1C27839900092A26 /* PositionTests.swift */; };
 		52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */; };
 		52E0E7DB1BF78C04001E321E /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
 		52E0E7E41BF7AF87001E321E /* MutableIndexedCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */; };
@@ -235,6 +236,7 @@
 		52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowTests.swift; path = Flow/FlowTests.swift; sourceTree = SOURCE_ROOT; };
 		52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableEnum.swift; sourceTree = "<group>"; };
 		52D6D9621BEFCEDC002C0205 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		52DA66CF1C27839900092A26 /* PositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
 		52DF8F271B2F8117004CB8C0 /* IdentifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierTests.swift; sourceTree = "<group>"; };
 		52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedCollection.swift; sourceTree = "<group>"; };
 		52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableIndexedCollectionType.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 				528C48711C14E96E005F679D /* WrapTests.swift */,
 				52BD42A81C2633C9006B847B /* DirectionTests.swift */,
 				52BD42ED1C271161006B847B /* RequireTests.swift */,
+				52DA66CF1C27839900092A26 /* PositionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -687,6 +690,7 @@
 				52D6D9361BEE5C15002C0205 /* Number.swift in Sources */,
 				52D6D93C1BEE5C15002C0205 /* Repeat.swift in Sources */,
 				52D6D9281BEE5C15002C0205 /* Dictionary+SwiftKit.swift in Sources */,
+				52DA66D11C27842700092A26 /* PositionTests.swift in Sources */,
 				52DF8F291B2F812E004CB8C0 /* IdentifierTests.swift in Sources */,
 				52D6D91C1BEE5C15002C0205 /* ArrayDictionary.swift in Sources */,
 				52E0E7F51BF7B904001E321E /* Unbox+SwiftKit.swift in Sources */,
