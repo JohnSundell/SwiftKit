@@ -23,3 +23,10 @@ extension CGSize: Unboxable {
         )
     }
 }
+
+/// Extension providing a default fallback value implementation for EmptyInitializable types
+public extension UnboxCompatibleType where Self: EmptyInitializable {
+    static func unboxFallbackValue() -> Self {
+        return self.init()
+    }
+}
