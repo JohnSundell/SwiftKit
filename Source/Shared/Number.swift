@@ -49,6 +49,15 @@ public extension Number {
     /// The absolute value for this number
     public var absoluteValue: Self { return Self(abs(self.toDouble())) }
     
+    /// Attempt to initialize a value with a string
+    public init?(string: String) {
+        guard let doubleValue = Double(string) else {
+            return nil
+        }
+        
+        self.init(doubleValue)
+    }
+    
     /// Return a value that is the result of flooring this value
     public func floor() -> Self {
         return Self(Foundation.floor(self.toDouble()))
