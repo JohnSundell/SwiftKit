@@ -4,7 +4,7 @@ import Foundation
 public typealias VoidClosure = Void -> Void
 
 /// Execute a closure on the Application's main queue (either sync or async)
-public func OnMainQueue(closure: VoidClosure) {
+public func OnMainQueue(@autoclosure(escaping) closure: VoidClosure) {
     if NSThread.isMainThread() {
         closure()
     } else {
