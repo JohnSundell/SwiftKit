@@ -11,3 +11,10 @@ public func Repeat(numberOfTimes: Int, closure: () -> Void) {
         closure()
     }
 }
+
+/// Repeat a closure n number of times, with the current index as a closure argument
+public func RepeatWithIndex(numberOfTimes: Int, closure: Int -> Void) {
+    for i in 0..<numberOfTimes {
+        closure(i)
+    }
+}
