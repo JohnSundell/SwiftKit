@@ -56,4 +56,12 @@ public extension CGRect {
         rect.size.height += heightChange
         return rect
     }
+    
+    /// Create a new rect that is centered within another rect (in the same coordinate system)
+    func rectCenteredInRect(rectToCenterIn: CGRect) -> CGRect {
+        var rect = self
+        rect.origin.x = rectToCenterIn.minX + floor((rectToCenterIn.width - rect.width) / 2)
+        rect.origin.y = rectToCenterIn.minY + floor((rectToCenterIn.height - rect.height) / 2)
+        return rect
+    }
 }
