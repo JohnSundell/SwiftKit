@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 /// Structure acting as a namespace for types describing positions
 public struct Position<T: Number> {
@@ -22,6 +23,21 @@ public struct Position_2D<T: Number>: Hashable, EmptyInitializable {
     /// Initialize an empty value
     public init() {
         self.init(x: nil, y: nil)
+    }
+    
+    /// Return a new position by offsetting this position
+    public func positionOffsetByX(x: T, y: T) -> Position_2D<T> {
+        return Position_2D(x: (self.x + x) as T, y: (self.y + y) as T)
+    }
+    
+    /// Conver this position into a CGPoint with equivalent x & y values
+    public func toCGPoint() -> CGPoint {
+        return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
+    }
+    
+    /// Convert this position into a CGPoint with a certain Position:CGPoint ratio
+    public func toCGPointWithRatio(ratio: CGFloat) -> CGPoint {
+        return CGPoint(x: CGFloat(self.x) * ratio, y: CGFloat(self.y) * ratio)
     }
 }
 
