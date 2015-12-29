@@ -3,8 +3,17 @@ import Foundation
 /// Typealias for closures that take Void input and produce Void output
 public typealias VoidClosure = Void -> Void
 
-/// Execute a closure on the Application's main queue (either sync or async)
+/// Execute an automatically generated closure on the Application's main queue (either sync or async)
 public func OnMainQueue(@autoclosure(escaping) closure: VoidClosure) {
+    if NSThread.isMainThread() {
+        closure()
+    } else {
+        dispatch_async(dispatch_get_main_queue(), closure)
+    }
+}
+
+/// Execute a closure on the Application's main queue (either sync or async)
+public func OnMainQueue(closure: VoidClosure) {
     if NSThread.isMainThread() {
         closure()
     } else {
