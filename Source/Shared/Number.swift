@@ -2,7 +2,7 @@ import Foundation
 import CoreGraphics
 
 /// Protocol that may be used to constrain a generic to numeric types
-public protocol Number: Quantifiable {
+public protocol Number: Quantifiable, StringConvertible {
     /// Initialize an instance with another Number
     init(_ number: Number)
     /// Initialize an instance with a double value

@@ -1,7 +1,7 @@
 import Foundation
 
 /// Protocol defining shared APIs for Direction types
-public protocol DirectionType: LoopableEnum, UnboxableByTransform {
+public protocol DirectionType: LoopableEnum, StringConvertible, UnboxableByTransform {
     /// Initialize an instance of this Direction type with a string equivalent to a member name
     init?(string: String)
     /// Return the next clockwise direction
@@ -29,16 +29,29 @@ public struct Direction {
 
         public init?(string: String) {
             switch string {
-            case "Up":
+            case FourWay.Up.toString():
                 self = .Up
-            case "Right":
+            case FourWay.Right.toString():
                 self = .Right
-            case "Down":
+            case FourWay.Down.toString():
                 self = .Down
-            case "Left":
+            case FourWay.Left.toString():
                 self = .Left
             default:
                 return nil
+            }
+        }
+        
+        public func toString() -> String {
+            switch self {
+            case .Up:
+                return "Up"
+            case .Right:
+                return "Right"
+            case .Down:
+                return "Down"
+            case .Left:
+                return "Left"
             }
         }
     }
@@ -62,21 +75,21 @@ public struct Direction {
         
         public init?(string: String) {
             switch string {
-            case "Up":
+            case EightWay.Up.toString():
                 self = .Up
-            case "UpRight":
+            case EightWay.UpRight.toString():
                 self = .UpRight
-            case "Right":
+            case EightWay.Right.toString():
                 self = .Right
-            case "RightDown":
+            case EightWay.RightDown.toString():
                 self = .RightDown
-            case "Down":
+            case EightWay.Down.toString():
                 self = .Down
-            case "DownLeft":
+            case EightWay.DownLeft.toString():
                 self = .DownLeft
-            case "Left":
+            case EightWay.Left.toString():
                 self = .Left
-            case "LeftUp":
+            case EightWay.LeftUp.toString():
                 self = .LeftUp
             default:
                 return nil
@@ -93,6 +106,27 @@ public struct Direction {
                 self = .Down
             case .Left:
                 self = .Left
+            }
+        }
+        
+        public func toString() -> String {
+            switch self {
+            case .Up:
+                return "Up"
+            case .UpRight:
+                return "UpRight"
+            case .Right:
+                return "Right"
+            case .RightDown:
+                return "RightDown"
+            case .Down:
+                return "Down"
+            case .DownLeft:
+                return "DownLeft"
+            case .Left:
+                return "Left"
+            case .LeftUp:
+                return "LeftUp"
             }
         }
     }

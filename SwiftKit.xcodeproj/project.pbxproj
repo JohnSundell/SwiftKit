@@ -14,6 +14,9 @@
 		521F3C821C18CF520088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		521F3C831C18CFB60088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		523E8C3F1C31CAB6005236BB /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C3E1C31CAB6005236BB /* Scale.swift */; };
+		523E8C431C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
+		523E8C441C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
+		523E8C451C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
 		526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
@@ -189,6 +192,7 @@
 		5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+SwiftKit.swift"; sourceTree = "<group>"; };
 		521F3C811C18CF520088124B /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		523E8C3E1C31CAB6005236BB /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		523E8C421C321EFB005236BB /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
 		526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 				52E0E7F31BF7B903001E321E /* Unbox+SwiftKit.swift */,
 				52D6D9141BEE5C15002C0205 /* Unwrap.swift */,
 				528C486D1C14E95F005F679D /* Wrap.swift */,
+				523E8C421C321EFB005236BB /* StringConvertible.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				52F515921C063EF300AA6895 /* Shape+NSImage.swift in Sources */,
 				52DA66DD1C278C9200092A26 /* NSData+SwiftKit.swift in Sources */,
 				52F515591C051B7500AA6895 /* CGSize+SwiftKit.swift in Sources */,
+				523E8C441C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52F5156D1C051B7500AA6895 /* Serializable.swift in Sources */,
 				52F515901C063DA000AA6895 /* Shape.swift in Sources */,
 				52F515671C051B7500AA6895 /* Position.swift in Sources */,
@@ -646,6 +652,7 @@
 				52D6D9231BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
 				52D6D9371BEE5C15002C0205 /* Quantifiable.swift in Sources */,
 				52BD42A11C25D85F006B847B /* CGVector+SwiftKit.swift in Sources */,
+				523E8C431C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */,
 				52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
@@ -717,6 +724,7 @@
 				52D6D92A1BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52D6D9261BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
+				523E8C451C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52BD42F61C27127D006B847B /* Shape.swift in Sources */,
 				52E0E7E91BF7B130001E321E /* MutableIndexedCollectionType.swift in Sources */,
 				52BD42A71C262E4B006B847B /* CoordinateSystem.swift in Sources */,
