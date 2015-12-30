@@ -17,3 +17,10 @@ public func RequireAndCast<A, B>(value: A?) throws -> B {
     
     return value
 }
+
+/// Require that an expression avaluates to true, or throw an NSError
+public func Require(@autoclosure expression: () -> Bool) throws {
+    if !expression() {
+        throw NSError(name: "Requirement not fulfilled")
+    }
+}
