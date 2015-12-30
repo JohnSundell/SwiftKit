@@ -29,4 +29,48 @@ class CGPointSwiftKitTests: XCTestCase {
         
         XCTAssertTrue(pointA.distanceToPoint(pointB).linearValue == 0, "Distance was expected to be 0 for 2 equal points")
     }
+    
+    func testPointAtDistanceInDirection() {
+        let origin = CGPoint(x: 7, y: 10)
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.FourWay.Up, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 7, y: 5)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(-5, inDirection: Direction.FourWay.Up, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 7, y: 15)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.FourWay.Right, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 12, y: 10)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.FourWay.Down, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 7, y: 15)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.FourWay.Left, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 2, y: 10)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.FourWay.Up, coordinateSystem: .OriginLowerLeft),
+            CGPoint(x: 7, y: 15)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.EightWay.UpRight, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 11, y: 6)
+        )
+        
+        XCTAssertEqual(
+            origin.pointAtDistance(5, inDirection: Direction.EightWay.LeftUp, coordinateSystem: .OriginUpperLeft),
+            CGPoint(x: 3, y: 6)
+        )
+    }
 }
