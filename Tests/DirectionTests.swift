@@ -1,6 +1,27 @@
 import XCTest
 
 class DirectionTests: XCTestCase {
+    func testCount() {
+        XCTAssertEqual(Direction.FourWay.count, 4)
+        XCTAssertEqual(Direction.EightWay.count, 8)
+    }
+    
+    func testRadianValue() {
+        XCTAssertEqual(Direction.FourWay.Up.radianValue, 0)
+        XCTAssertEqual(Direction.FourWay.Right.radianValue, CGFloat(M_PI_2))
+        XCTAssertEqual(Direction.FourWay.Down.radianValue, CGFloat(M_PI))
+        XCTAssertEqual(Direction.FourWay.Left.radianValue, CGFloat(M_PI + M_PI_2))
+        
+        XCTAssertEqual(Direction.EightWay.Up.radianValue, 0)
+        XCTAssertEqual(Direction.EightWay.UpRight.radianValue, CGFloat(M_PI_4))
+        XCTAssertEqual(Direction.EightWay.Right.radianValue, CGFloat(M_PI_2))
+        XCTAssertEqual(Direction.EightWay.RightDown.radianValue, CGFloat(M_PI_2 + M_PI_4))
+        XCTAssertEqual(Direction.EightWay.Down.radianValue, CGFloat(M_PI))
+        XCTAssertEqual(Direction.EightWay.DownLeft.radianValue, CGFloat(M_PI + M_PI_4))
+        XCTAssertEqual(Direction.EightWay.Left.radianValue, CGFloat(M_PI + M_PI_2))
+        XCTAssertEqual(Direction.EightWay.LeftUp.radianValue, CGFloat(M_PI + M_PI_2 + M_PI_4))
+    }
+    
     func testOppositeDirection() {
         XCTAssertEqual(Direction.FourWay.Left.oppositeDirection(), Direction.FourWay.Right)
         XCTAssertEqual(Direction.FourWay.Up.oppositeDirection(), Direction.FourWay.Down)

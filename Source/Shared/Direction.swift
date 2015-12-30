@@ -1,7 +1,13 @@
 import Foundation
+import CoreGraphics
 
 /// Protocol defining shared APIs for Direction types
 public protocol DirectionType: LoopableEnum, StringConvertible, UnboxableByTransform {
+    /// The number of directions that this type contains
+    static var count: Int { get }
+    /// The radian value that represents the angle of this direction
+    var radianValue: CGFloat { get }
+    
     /// Initialize an instance of this Direction type with a string equivalent to a member name
     init?(string: String)
     /// Return the next clockwise direction
@@ -134,6 +140,14 @@ public struct Direction {
 
 /// Default implementations of the DirectionType protocol
 public extension DirectionType where RawValue: Number, UnboxRawValueType == String {
+    static var count: Int {
+        return Self.lastValue().rawValue + 1
+    }
+    
+    var radianValue: CGFloat {
+        return (CGFloat(M_PI * Double(2)) / CGFloat(Self.count)) * CGFloat(self.rawValue)
+    }
+    
     static func firstValue() -> Self {
         return Self(rawValue: RawValue(0))!
     }
@@ -155,10 +169,9 @@ public extension DirectionType where RawValue: Number, UnboxRawValueType == Stri
     }
     
     func oppositeDirection() -> Self {
-        let numberOfDirections: Int = Self.lastValue().rawValue + 1
         var direction = self
         
-        Repeat(numberOfDirections / 2) {
+        Repeat(Self.count / 2) {
             direction = direction.nextCounterClockwiseDirection()
         }
         
