@@ -63,6 +63,12 @@ public extension Number {
         return Self(Foundation.floor(self.toDouble()))
     }
     
+    /// Return a (potentially) rounded value that contains a maximum number of decimals
+    public func roundedValueWithDecimalCount(decimalCount: UInt) -> Self {
+        let coefficient = pow(10, Double(decimalCount))
+        return round(self.toDouble() * coefficient) / coefficient
+    }
+    
     /// Return a string representation of the number
     func toString() -> String {
         return "\(self)"

@@ -6,6 +6,12 @@ class NumberTests: XCTestCase {
         XCTAssertEqual(Double(7).fractionalValue, 0)
     }
     
+    func testRoundedValueWithDecimalCount() {
+        XCTAssertEqual(1.12021.roundedValueWithDecimalCount(2), 1.12)
+        XCTAssertEqual(1.12021.roundedValueWithDecimalCount(5), 1.12021)
+        XCTAssertEqual(1.12021.roundedValueWithDecimalCount(7), 1.12021)
+    }
+    
     func testToString() {
         XCTAssertEqual(7.toString(), "7")
         XCTAssertEqual(Int(-7).toString(), "-7")
