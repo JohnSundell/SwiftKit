@@ -16,6 +16,8 @@ public protocol DirectionType: LoopableEnum, StringConvertible, UnboxableByTrans
     func nextCounterClockwiseDirection() -> Self
     /// Return the opposite direction
     func oppositeDirection() -> Self
+    /// Convert this direction into an eight way direction
+    func toEightWayDirection() -> Direction.EightWay
 }
 
 /// Structure acting as a namespace for enums describing directions
@@ -59,6 +61,10 @@ public struct Direction {
             case .Left:
                 return "Left"
             }
+        }
+        
+        public func toEightWayDirection() -> Direction.EightWay {
+            return Direction.EightWay(self)
         }
     }
     
@@ -135,6 +141,10 @@ public struct Direction {
                 return "LeftUp"
             }
         }
+        
+        public func toEightWayDirection() -> Direction.EightWay {
+            return self
+        }
     }
 }
 
@@ -176,5 +186,18 @@ public extension DirectionType where RawValue: Number, UnboxRawValueType == Stri
         }
         
         return direction
+    }
+}
+
+/// Extension for Arrays containing Dictionary values
+public extension Array where Element: DirectionType {
+    func toEightWayDirections() -> [Direction.EightWay] {
+        var directions: [Direction.EightWay] = []
+        
+        for direction in self {
+            directions.append(direction.toEightWayDirection())
+        }
+        
+        return directions
     }
 }
