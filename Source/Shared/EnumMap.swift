@@ -30,7 +30,7 @@ public struct EnumMap<K: RawRepresentable, V where K.RawValue: Number, K: Hashab
     
     /// Run a closure on each value of this map
     public func forEach(closure: (K, V) -> Void) {
-        EnumIterator<K>.iterate() {
+        EnumIterator<K>.forEach() {
             closure($0, self.values[$0]!)
         }
     }

@@ -4,7 +4,7 @@ import Foundation
 public extension RawRepresentable where RawValue: Number, Self:Hashable {
     /// Iterate through each member of this enum (see EnumIterator for more options)
     public static func forEach(closure: Self -> Void) {
-        EnumIterator.iterate(closure)
+        EnumIterator.forEach(closure)
     }
     
     /// Count the members of this enum, by iterating through each member

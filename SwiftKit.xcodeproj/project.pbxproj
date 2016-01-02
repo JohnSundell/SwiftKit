@@ -18,6 +18,7 @@
 		523E8C441C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		523E8C451C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
+		52597C611C374FCB00AE31E4 /* EnumIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */; };
 		526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
 		527665911B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
@@ -194,6 +195,7 @@
 		523E8C3E1C31CAB6005236BB /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		523E8C421C321EFB005236BB /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
+		52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumIteratorTests.swift; sourceTree = "<group>"; };
 		526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
 		528C486D1C14E95F005F679D /* Wrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wrap.swift; path = Wrap/Wrap.swift; sourceTree = SOURCE_ROOT; };
@@ -422,6 +424,7 @@
 				52BD42ED1C271161006B847B /* RequireTests.swift */,
 				52DA66CF1C27839900092A26 /* PositionTests.swift */,
 				526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */,
+				52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				52D6D9461BEE5C15002C0205 /* Unwrap.swift in Sources */,
 				52D6D92C1BEE5C15002C0205 /* Dispatch.swift in Sources */,
 				52BD42F51C27127D006B847B /* Require.swift in Sources */,
+				52597C611C374FCB00AE31E4 /* EnumIteratorTests.swift in Sources */,
 				52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */,
 				52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */,
 				52D6D9341BEE5C15002C0205 /* Identifier.swift in Sources */,
