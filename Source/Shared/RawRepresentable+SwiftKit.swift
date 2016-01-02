@@ -52,4 +52,9 @@ public extension RawRepresentable where RawValue: Number, Self:Hashable {
     public func advancedBy(n: RawValue) -> Self? {
        return Self(rawValue: RawValue(self.rawValue + n))
     }
+    
+    /// Go to the next member of the enum, or loop around to the first member if this is the last one
+    public func nextOrLoopAround() -> Self {
+        return Self(rawValue: RawValue(self.rawValue.toDouble() + 1)) ?? Self.first()
+    }
 }

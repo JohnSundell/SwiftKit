@@ -112,8 +112,6 @@
 		52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94A1BEE5C91002C0205 /* Flow.swift */; };
 		52D6D94C1BEE5C91002C0205 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94A1BEE5C91002C0205 /* Flow.swift */; };
 		52D6D94E1BEE5CA4002C0205 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */; };
-		52D6D9501BEE60D0002C0205 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
-		52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
 		52D6D9631BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
 		52DA66D11C27842700092A26 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA66CF1C27839900092A26 /* PositionTests.swift */; };
@@ -155,7 +153,6 @@
 		52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */; };
 		52F515621C051B7500AA6895 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90B1BEE5C15002C0205 /* Identifier.swift */; };
 		52F515631C051B7500AA6895 /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
-		52F515641C051B7500AA6895 /* LoopableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */; };
 		52F515651C051B7500AA6895 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90C1BEE5C15002C0205 /* Number.swift */; };
 		52F515661C051B7500AA6895 /* MutableIndexedCollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */; };
 		52F515671C051B7500AA6895 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9621BEFCEDC002C0205 /* Position.swift */; };
@@ -241,7 +238,6 @@
 		52D6D9471BEE5C2E002C0205 /* Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Unbox/Unbox.swift; sourceTree = SOURCE_ROOT; };
 		52D6D94A1BEE5C91002C0205 /* Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flow.swift; path = Flow/Flow.swift; sourceTree = SOURCE_ROOT; };
 		52D6D94D1BEE5CA4002C0205 /* FlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowTests.swift; path = Flow/FlowTests.swift; sourceTree = SOURCE_ROOT; };
-		52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableEnum.swift; sourceTree = "<group>"; };
 		52D6D9621BEFCEDC002C0205 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		52DA66CF1C27839900092A26 /* PositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
 		52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+SwiftKit.swift"; sourceTree = "<group>"; };
@@ -331,7 +327,6 @@
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
 				52F5158D1C0637E600AA6895 /* LocalizedString.swift */,
-				52D6D94F1BEE60D0002C0205 /* LoopableEnum.swift */,
 				5294C6AD1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift */,
 				52DA66DB1C278B4300092A26 /* NSData+SwiftKit.swift */,
 				5294C6721C0B47FC0035BE4F /* NSError+SwiftKit.swift */,
@@ -575,7 +570,6 @@
 				52F515731C051B7500AA6895 /* Unwrap.swift in Sources */,
 				5294C6B71C0D1A2F0035BE4F /* Typealiases.swift in Sources */,
 				52F515691C051B7500AA6895 /* Quantifiable.swift in Sources */,
-				52F515641C051B7500AA6895 /* LoopableEnum.swift in Sources */,
 				52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */,
 				528C48751C14EF5F005F679D /* Require.swift in Sources */,
 				52F5156B1C051B7500AA6895 /* RawRepresentable+SwiftKit.swift in Sources */,
@@ -661,7 +655,6 @@
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
 				52E0E7F11BF7B791001E321E /* Probability.swift in Sources */,
 				52D6D9481BEE5C2E002C0205 /* Unbox.swift in Sources */,
-				52D6D9501BEE60D0002C0205 /* LoopableEnum.swift in Sources */,
 				52D6D91D1BEE5C15002C0205 /* Axis.swift in Sources */,
 				52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */,
 				52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */,
@@ -745,7 +738,6 @@
 				52BD42F51C27127D006B847B /* Require.swift in Sources */,
 				52597C611C374FCB00AE31E4 /* EnumIteratorTests.swift in Sources */,
 				52CA89831B6D83D0003DC193 /* CGPoint+SwiftKitTests.swift in Sources */,
-				52D6D9511BEE60D0002C0205 /* LoopableEnum.swift in Sources */,
 				52D6D9341BEE5C15002C0205 /* Identifier.swift in Sources */,
 				52D6D91A1BEE5C15002C0205 /* Array+SwiftKit.swift in Sources */,
 				52D6D9641BEFCEDC002C0205 /* Position.swift in Sources */,

@@ -2,7 +2,7 @@ import Foundation
 import CoreGraphics
 
 /// Protocol defining shared APIs for Direction types
-public protocol DirectionType: LoopableEnum, StringConvertible, UnboxableByTransform {
+public protocol DirectionType: RawRepresentable, Hashable, StringConvertible, UnboxableByTransform {
     /// The number of directions that this type contains
     static var count: Int { get }
     /// The radian value that represents the angle of this direction
@@ -30,6 +30,10 @@ public struct Direction {
         case Right
         case Down
         case Left
+        
+        public static var count: Int {
+            return 4
+        }
         
         public static func lastValue() -> FourWay {
             return .Left
@@ -80,6 +84,10 @@ public struct Direction {
         case DownLeft
         case Left
         case LeftUp
+        
+        public static var count: Int {
+            return 8
+        }
         
         public static func lastValue() -> EightWay {
             return .LeftUp
@@ -150,12 +158,8 @@ public struct Direction {
 
 /// Default implementations of the DirectionType protocol
 public extension DirectionType where RawValue: Number, UnboxRawValueType == String {
-    static var count: Int {
-        return Self.lastValue().rawValue + 1
-    }
-    
     var radianValue: CGFloat {
-        return (CGFloat(M_PI * Double(2)) / CGFloat(Self.count)) * CGFloat(self.rawValue)
+        return (CGFloat(M_PI * Double(2)) / CGFloat(Self.count())) * CGFloat(self.rawValue)
     }
     
     static func firstValue() -> Self {
@@ -171,11 +175,11 @@ public extension DirectionType where RawValue: Number, UnboxRawValueType == Stri
     }
 
     func nextClockwiseDirection() -> Self {
-        return self.next()
+        return self.nextOrLoopAround()
     }
     
     func nextCounterClockwiseDirection() -> Self {
-        return self.previous()
+        return self.previous() ?? Self(rawValue: RawValue(Self.count - 1))!
     }
     
     func oppositeDirection() -> Self {
