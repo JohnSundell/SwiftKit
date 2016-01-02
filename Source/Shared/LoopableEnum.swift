@@ -1,7 +1,7 @@
 import Foundation
 
 /// Protocol that can be used to define enums that are loopable
-public protocol LoopableEnum: RawRepresentable {
+public protocol LoopableEnum: RawRepresentable, Equatable {
     /// The first member of the enum
     static func firstValue() -> Self
     /// The last member of the enum
