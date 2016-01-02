@@ -9,20 +9,43 @@ public extension RawRepresentable where RawValue: Number, Self:Hashable {
     
     /// Count the members of this enum, by iterating through each member
     public static func count() -> Int {
-        var count = 0
-        var member = Self(rawValue: RawValue(0))
+        return self.all().count
+    }
+    
+    /// Return all members of this enum, by iterating through it and collecting each one
+    public static func all() -> [Self] {
+        var values = [Self]()
         
-        while let currentMember = member {
-            count++
-            member = currentMember.next()
+        Self.forEach({
+            values.append($0)
+        })
+
+        return values
+    }
+    
+    /// Return the first member of the enum (minimum raw value)
+    public static func first() -> Self {
+        var rawValue = RawValue(0)
+        var first = Self(rawValue: rawValue)
+        
+        while true {
+            if let first = first {
+                return first
+            }
+            
+            rawValue++
+            first = Self(rawValue: rawValue)
         }
-        
-        return count
     }
     
     /// Go to the next member of the enum
     public func next() -> Self? {
-        return Self(rawValue: RawValue(self.rawValue.toDouble() + 1))
+        return self.advancedBy(RawValue(1))
+    }
+    
+    /// Go the previous member of the enum
+    public func previous() -> Self? {
+        return self.advancedBy(RawValue(-1))
     }
     
     /// Go to the member that corresponds to the current raw value advanced by n
