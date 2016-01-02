@@ -9,12 +9,12 @@ public extension CGVector {
     
     /// The primary direction that the vector is facing in a coordinate system
     public func primaryDirectionInCoordinateSystem(coordinateSystem: CoordinateSystem) -> Direction.FourWay {
-        if self.dx > self.dy {
+        if self.dx.absoluteValue > self.dy.absoluteValue {
             if self.dx > 0 {
-                return .Left
+                return .Right
             }
             
-            return .Right
+            return .Left
         }
         
         let incrementalVerticalDirection = coordinateSystem.incrementalVerticalDirection
