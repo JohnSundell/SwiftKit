@@ -23,4 +23,9 @@ public extension CGSize {
             y: floor((size.height - self.height) / 2)
         )
     }
+    
+    /// Conver this size structure into a point structure, with x = width, y = height
+    public func toCGPoint() -> CGPoint {
+        return CGPoint(x: self.width, y: self.height)
+    }
 }
