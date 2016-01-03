@@ -19,17 +19,17 @@ public extension CGPoint {
     
     /// Return a new point that is the result of moving this point a certain distance in a direction
     public func pointAtDistance<T: DirectionType>(distance: CGFloat, inDirection direction: T, coordinateSystem: CoordinateSystem, integral: Bool = true) -> CGPoint {
-        var vertialDistance = distance * cos(direction.radianValue)
+        var verticalDistance = distance * cos(direction.radianValue)
         
         if coordinateSystem.incrementalVerticalDirection == .Down {
-            vertialDistance = -vertialDistance
+            verticalDistance = -verticalDistance
         }
         
         let decimalCount = UInt(integral ? 0 : 3)
         
         return CGPoint(
             x: (self.x + distance * sin(direction.radianValue)).roundedValueWithDecimalCount(decimalCount),
-            y: (self.y + vertialDistance).roundedValueWithDecimalCount(decimalCount)
+            y: (self.y + verticalDistance).roundedValueWithDecimalCount(decimalCount)
         )
     }
 }
