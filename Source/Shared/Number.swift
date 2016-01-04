@@ -69,8 +69,13 @@ public extension Number {
         return round(self.toDouble() * coefficient) / coefficient
     }
     
+    /// Return whether this number is evenly (non-fractional) divisible by another number
+    public func isEvenlyDivisibleBy(number: Number) -> Bool {
+        return self.toDouble() % number.toDouble() == 0
+    }
+    
     /// Return a string representation of the number
-    func toString() -> String {
+    public func toString() -> String {
         return "\(self)"
     }
 }

@@ -12,6 +12,13 @@ class NumberTests: XCTestCase {
         XCTAssertEqual(1.12021.roundedValueWithDecimalCount(7), 1.12021)
     }
     
+    func testIsEvenlyDivisible() {
+        XCTAssertTrue(0.isEvenlyDivisibleBy(2))
+        XCTAssertTrue(4.isEvenlyDivisibleBy(2))
+        XCTAssertFalse(4.4.isEvenlyDivisibleBy(2))
+        XCTAssertFalse(3.isEvenlyDivisibleBy(2))
+    }
+    
     func testToString() {
         XCTAssertEqual(7.toString(), "7")
         XCTAssertEqual(Int(-7).toString(), "-7")
