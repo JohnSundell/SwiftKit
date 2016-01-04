@@ -16,6 +16,8 @@ public protocol DirectionType: RawRepresentable, Hashable, StringConvertible, Un
     func nextCounterClockwiseDirection() -> Self
     /// Return the opposite direction
     func oppositeDirection() -> Self
+    /// Attempt to convert this direction into a four way direction
+    func toFourWayDirection() -> Direction.FourWay?
     /// Convert this direction into an eight way direction
     func toEightWayDirection() -> Direction.EightWay
 }
@@ -65,6 +67,10 @@ public struct Direction {
             case .Left:
                 return "Left"
             }
+        }
+        
+        public func toFourWayDirection() -> Direction.FourWay? {
+            return self
         }
         
         public func toEightWayDirection() -> Direction.EightWay {
@@ -147,6 +153,21 @@ public struct Direction {
                 return "Left"
             case .LeftUp:
                 return "LeftUp"
+            }
+        }
+        
+        public func toFourWayDirection() -> Direction.FourWay? {
+            switch self {
+            case .Up:
+                return .Up
+            case .Right:
+                return .Right
+            case .Down:
+                return .Down
+            case .Left:
+                return .Left
+            case .UpRight, .RightDown, .DownLeft, .LeftUp:
+                return nil
             }
         }
         
