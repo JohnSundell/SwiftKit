@@ -16,6 +16,11 @@ public extension CGSize {
         return size
     }
     
+    /// Return a new size that is the result of resizing this size in either dimension
+    public func resizedSizeByX(x: CGFloat, y: CGFloat) -> CGSize {
+        return CGSize(width: self.width + x, height: self.height + y)
+    }
+    
     /// Return the point at which this size is centered within another size
     public func centerPointInSize(size: CGSize) -> CGPoint {
         return CGPoint(
