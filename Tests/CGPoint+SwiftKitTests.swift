@@ -73,4 +73,12 @@ class CGPointSwiftKitTests: XCTestCase {
             CGPoint(x: 3, y: 6)
         )
     }
+    
+    func testClosestPointInGrid() {
+        let tileSize = CGSize(width: 50, height: 70)
+        
+        XCTAssertEqual(CGPoint(x: 10, y: 10).closestPointInGridWithTileSize(tileSize), CGPoint(x: 0, y: 0))
+        XCTAssertEqual(CGPoint(x: 30, y: 10).closestPointInGridWithTileSize(tileSize), CGPoint(x: 50, y: 0))
+        XCTAssertEqual(CGPoint(x: 100, y: 140).closestPointInGridWithTileSize(tileSize), CGPoint(x: 100, y: 140))
+    }
 }

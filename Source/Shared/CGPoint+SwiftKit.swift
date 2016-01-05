@@ -32,4 +32,12 @@ public extension CGPoint {
             y: (self.y + verticalDistance).roundedValueWithDecimalCount(decimalCount)
         )
     }
+    
+    /// Return a new point by finding the closest point in a grid given a certain tile size, assuming a {0, 0} origo
+    public func closestPointInGridWithTileSize(tileSize: CGSize) -> CGPoint {
+        return CGPoint(
+            x: round(self.x / tileSize.width) * tileSize.width,
+            y: round(self.y / tileSize.height) * tileSize.height
+        )
+    }
 }
