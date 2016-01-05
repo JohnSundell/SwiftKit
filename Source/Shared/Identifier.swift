@@ -35,3 +35,10 @@ extension Identifier: UnboxableByTransform {
         return Identifier()
     }
 }
+
+/// Wrap support for Identifier
+extension Identifier: WrapCustomizable {
+    public func wrap() -> AnyObject? {
+        return self.identifierString
+    }
+}
