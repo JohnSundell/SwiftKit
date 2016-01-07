@@ -12,6 +12,11 @@ public extension CGPoint {
         return CGPoint(x: self.x + x, y: self.y + y)
     }
     
+    /// Return a new point by offsetting this point with a vector
+    public func pointOffsetBy(vector: CGVector) -> CGPoint {
+        return CGPoint(x: self.x + vector.dx, y: self.y + vector.dy)
+    }
+    
     /// Return a new point by multiplying this point's x and y values by a factor
     public func pointMultipliedByX(x: CGFloat, y: CGFloat) -> CGPoint {
         return CGPoint(x: self.x * x, y: self.y * y)
