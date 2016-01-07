@@ -3,7 +3,7 @@ import Foundation
 /// Require that an optional is not nil, or throw an NSError (with an optional explicit message)
 public func Require<T>(optional: Optional<T>, errorMessage: String? = nil) throws -> T {
     guard let value = optional else {
-        throw NSError(name: "Required value was nil")
+        throw NSError(name: errorMessage ?? "Required value was nil")
     }
     
     return value
