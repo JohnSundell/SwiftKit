@@ -18,6 +18,9 @@
 		523E8C441C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		523E8C451C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		52436BE31B79677A00570956 /* AnyOfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52436BE11B79672000570956 /* AnyOfTests.swift */; };
+		52465E151C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
+		52465E161C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
+		52465E171C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
 		52597C611C374FCB00AE31E4 /* EnumIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */; };
 		526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
@@ -192,6 +195,7 @@
 		523E8C3E1C31CAB6005236BB /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		523E8C421C321EFB005236BB /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
+		52465E141C3C450000463E6E /* Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumIteratorTests.swift; sourceTree = "<group>"; };
 		526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 				52D6D90C1BEE5C15002C0205 /* Number.swift */,
 				52E0E7E31BF7AF87001E321E /* MutableIndexedCollectionType.swift */,
 				5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */,
+				52465E141C3C450000463E6E /* Pair.swift */,
 				52D6D9621BEFCEDC002C0205 /* Position.swift */,
 				52E0E7F01BF7B791001E321E /* Probability.swift */,
 				52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */,
@@ -606,6 +611,7 @@
 				52F515621C051B7500AA6895 /* Identifier.swift in Sources */,
 				52F5155D1C051B7500AA6895 /* EmptyInitializable.swift in Sources */,
 				52F515551C051B7500AA6895 /* Axis.swift in Sources */,
+				52465E161C3C450000463E6E /* Pair.swift in Sources */,
 				52F5156E1C051B7500AA6895 /* Serialize.swift in Sources */,
 				52F5155C1C051B7500AA6895 /* Dispatch.swift in Sources */,
 				5294C6AF1C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
@@ -652,6 +658,7 @@
 				523E8C431C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */,
 				52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
+				52465E151C3C450000463E6E /* Pair.swift in Sources */,
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
 				52E0E7F11BF7B791001E321E /* Probability.swift in Sources */,
 				52D6D9481BEE5C2E002C0205 /* Unbox.swift in Sources */,
@@ -711,6 +718,7 @@
 				5294C6B01C0D18A60035BE4F /* NSAttributedString+SwiftKit.swift in Sources */,
 				52D6D9241BEE5C15002C0205 /* CGRect+SwiftKit.swift in Sources */,
 				526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */,
+				52465E171C3C450000463E6E /* Pair.swift in Sources */,
 				52D6D9301BEE5C15002C0205 /* EnumMap.swift in Sources */,
 				52D6D9201BEE5C15002C0205 /* Calculate.swift in Sources */,
 				52D6D9181BEE5C15002C0205 /* AreaNode.swift in Sources */,
