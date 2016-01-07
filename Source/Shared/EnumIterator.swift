@@ -48,11 +48,13 @@ public extension EnumIterator {
     }
     
     /// Map an array of values from each member of the enum that this class is for
-    public class func map<M>(@noescape forEachCase: T -> M) -> [M] {
+    public class func map<M>(@noescape forEachCase: T -> M?) -> [M] {
         var mapped = [M]()
         
         self.forEach() {
-            mapped.append(forEachCase($0))
+            if let mappedMember = forEachCase($0) {
+                mapped.append(mappedMember)
+            }
         }
         
         return mapped
