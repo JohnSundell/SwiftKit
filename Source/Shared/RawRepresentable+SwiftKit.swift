@@ -7,6 +7,11 @@ public extension RawRepresentable where RawValue: Number, Self:Hashable {
         EnumIterator.forEach(closure)
     }
     
+    /// Map an Array by iterating through each member of this enum (see EnumIterator for more options)
+    public static func map<M>(closure: Self -> M?) -> [M] {
+        return EnumIterator.map(closure)
+    }
+    
     /// Count the members of this enum, by iterating through each member
     public static func count() -> Int {
         return self.all().count
