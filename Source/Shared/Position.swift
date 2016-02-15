@@ -8,8 +8,10 @@ public struct Position<T: Number> {
 }
 
 /// Structure describing a two-dimensional position
-public struct Position_2D<T: Number>: Hashable, EmptyInitializable {
-    public var hashValue: Int { return "\(self.x):\(self.y)".hashValue }
+public struct Position_2D<T: Number>: Hashable, StringConvertible, CustomStringConvertible, CustomDebugStringConvertible, EmptyInitializable {
+    public var hashValue: Int { return self.description.hashValue }
+    public var description: String { return "\(self.x):\(self.y)" }
+    public var debugDescription: String { return self.description }
     
     public var x: T
     public var y: T
@@ -60,6 +62,10 @@ public struct Position_2D<T: Number>: Hashable, EmptyInitializable {
     /// Convert this position into a CGPoint with a certain Position:CGPoint ratio
     public func toCGPointWithRatio(ratio: CGFloat) -> CGPoint {
         return CGPoint(x: CGFloat(self.x) * ratio, y: CGFloat(self.y) * ratio)
+    }
+    
+    public func toString() -> String {
+        return self.description
     }
 }
 
