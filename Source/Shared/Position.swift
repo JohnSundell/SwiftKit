@@ -30,6 +30,28 @@ public struct Position_2D<T: Number>: Hashable, EmptyInitializable {
         return Position_2D(x: (self.x + x) as T, y: (self.y + y) as T)
     }
     
+    /// Return a new position by moving this position by 1 unit in a direction
+    public func positionInDirection(direction: Direction.FourWay, coordinateSystem: CoordinateSystem = .OriginUpperLeft) -> Position_2D<T> {
+        switch direction {
+        case .Up:
+            if coordinateSystem.incrementalVerticalDirection == .Up {
+                return Position_2D(x: self.x, y: (self.y + 1) as T)
+            } else {
+                return Position_2D(x: self.x, y: (self.y - 1) as T)
+            }
+        case .Right:
+            return Position_2D(x: (self.x + 1) as T, y: self.y)
+        case .Down:
+            if coordinateSystem.incrementalVerticalDirection == .Down {
+                return Position_2D(x: self.x, y: (self.y + 1) as T)
+            } else {
+                return Position_2D(x: self.x, y: (self.y - 1) as T)
+            }
+        case .Left:
+            return Position_2D(x: (self.x - 1) as T, y: self.y)
+        }
+    }
+    
     /// Conver this position into a CGPoint with equivalent x & y values
     public func toCGPoint() -> CGPoint {
         return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
