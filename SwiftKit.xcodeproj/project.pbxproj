@@ -90,8 +90,6 @@
 		52D6D92E1BEE5C15002C0205 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9081BEE5C15002C0205 /* EnumIterator.swift */; };
 		52D6D92F1BEE5C15002C0205 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9091BEE5C15002C0205 /* EnumMap.swift */; };
 		52D6D9301BEE5C15002C0205 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9091BEE5C15002C0205 /* EnumMap.swift */; };
-		52D6D9311BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */; };
-		52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */; };
 		52D6D9331BEE5C15002C0205 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90B1BEE5C15002C0205 /* Identifier.swift */; };
 		52D6D9341BEE5C15002C0205 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90B1BEE5C15002C0205 /* Identifier.swift */; };
 		52D6D9351BEE5C15002C0205 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90C1BEE5C15002C0205 /* Number.swift */; };
@@ -153,7 +151,6 @@
 		52F5155E1C051B7500AA6895 /* EnumIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9081BEE5C15002C0205 /* EnumIterator.swift */; };
 		52F5155F1C051B7500AA6895 /* EnumMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9091BEE5C15002C0205 /* EnumMap.swift */; };
 		52F515601C051B7500AA6895 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D94A1BEE5C91002C0205 /* Flow.swift */; };
-		52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */; };
 		52F515621C051B7500AA6895 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90B1BEE5C15002C0205 /* Identifier.swift */; };
 		52F515631C051B7500AA6895 /* KeyedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */; };
 		52F515651C051B7500AA6895 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D90C1BEE5C15002C0205 /* Number.swift */; };
@@ -229,7 +226,6 @@
 		52D6D9071BEE5C15002C0205 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		52D6D9081BEE5C15002C0205 /* EnumIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumIterator.swift; sourceTree = "<group>"; };
 		52D6D9091BEE5C15002C0205 /* EnumMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumMap.swift; sourceTree = "<group>"; };
-		52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hashable+Equatable.swift"; sourceTree = "<group>"; };
 		52D6D90B1BEE5C15002C0205 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		52D6D90C1BEE5C15002C0205 /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 		52D6D90D1BEE5C15002C0205 /* Quantifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quantifiable.swift; sourceTree = "<group>"; };
@@ -326,7 +322,6 @@
 				52D6D9081BEE5C15002C0205 /* EnumIterator.swift */,
 				52D6D9091BEE5C15002C0205 /* EnumMap.swift */,
 				52D6D94A1BEE5C91002C0205 /* Flow.swift */,
-				52D6D90A1BEE5C15002C0205 /* Hashable+Equatable.swift */,
 				521F3C811C18CF520088124B /* Identifiable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
@@ -575,7 +570,6 @@
 				52F515731C051B7500AA6895 /* Unwrap.swift in Sources */,
 				5294C6B71C0D1A2F0035BE4F /* Typealiases.swift in Sources */,
 				52F515691C051B7500AA6895 /* Quantifiable.swift in Sources */,
-				52F515611C051B7500AA6895 /* Hashable+Equatable.swift in Sources */,
 				528C48751C14EF5F005F679D /* Require.swift in Sources */,
 				52F5156B1C051B7500AA6895 /* RawRepresentable+SwiftKit.swift in Sources */,
 				52F5155E1C051B7500AA6895 /* EnumIterator.swift in Sources */,
@@ -666,7 +660,6 @@
 				52D6D94B1BEE5C91002C0205 /* Flow.swift in Sources */,
 				52D6D93F1BEE5C15002C0205 /* Serialize.swift in Sources */,
 				52DA66DC1C278B4300092A26 /* NSData+SwiftKit.swift in Sources */,
-				52D6D9311BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52E0E7F41BF7B903001E321E /* Unbox+SwiftKit.swift in Sources */,
 				52BD42F91C27127E006B847B /* Shape.swift in Sources */,
 				52D6D92F1BEE5C15002C0205 /* EnumMap.swift in Sources */,
@@ -726,7 +719,6 @@
 				520B4D6F1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift in Sources */,
 				5219BD331C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */,
 				52D6D92A1BEE5C15002C0205 /* Direction.swift in Sources */,
-				52D6D9321BEE5C15002C0205 /* Hashable+Equatable.swift in Sources */,
 				52D6D9261BEE5C15002C0205 /* CGSize+SwiftKit.swift in Sources */,
 				523E8C451C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52BD42F61C27127D006B847B /* Shape.swift in Sources */,

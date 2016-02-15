@@ -95,3 +95,13 @@ extension Position_3D: UnboxableKey {
         return self.init(x: x, y: y, z: z)
     }
 }
+
+// Equatable support for Position_2D
+public func ==<T: Number>(lhs: Position_2D<T>, rhs: Position_2D<T>) -> Bool {
+    return lhs.hashValue == rhs.hashValue
+}
+
+// Equatable support for Position_3D
+public func ==<T: Number>(lhs: Position_3D<T>, rhs: Position_3D<T>) -> Bool {
+    return lhs.hashValue == rhs.hashValue
+}

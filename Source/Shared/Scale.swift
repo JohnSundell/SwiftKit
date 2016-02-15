@@ -24,3 +24,10 @@ public struct Scale_2D<T: Number>: Hashable, EmptyInitializable {
         self.init(x: T(1), y: T(1))
     }
 }
+
+// MARK: - Operators
+
+// Equatable support for Scale_2D
+public func ==<T: Number>(lhs: Scale_2D<T>, rhs: Scale_2D<T>) -> Bool {
+    return lhs.hashValue == rhs.hashValue
+}
