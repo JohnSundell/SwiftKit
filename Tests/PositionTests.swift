@@ -1,6 +1,16 @@
 import XCTest
 
 class PositionTests: XCTestCase {
+    func testDirectionToPosition() {
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 3, y: 2)), .Right)
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 1, y: 2)), .Left)
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 2, y: 1)), .Up)
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 2, y: 3)), .Down)
+        
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 5, y: 4)), .Right)
+        XCTAssertEqual(Position_2D(x: 2, y: 2).directionToPosition(Position_2D(x: 4, y: 5)), .Down)
+    }
+    
     func testUnboxableKeySupportFor2DPosition() {
         XCTAssertEqual(Position_2D.transformUnboxedKey("3:5"), Position_2D(x: 3, y: 5))
         XCTAssertEqual(Position_2D.transformUnboxedKey("07:09"), Position_2D(x: 7, y: 9))

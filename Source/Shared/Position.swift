@@ -54,6 +54,34 @@ public struct Position_2D<T: Number>: Hashable, StringConvertible, CustomStringC
         }
     }
     
+    /// Return the direction (out of 4 ways) that another position is considered to be in
+    public func directionToPosition(position: Position_2D<T>, coordinateSystem: CoordinateSystem = .OriginUpperLeft) -> Direction.FourWay? {
+        if self == position {
+            return nil
+        }
+        
+        let selfX = self.x.toDouble()
+        let selfY = self.y.toDouble()
+        let positionX = position.x.toDouble()
+        let positionY = position.y.toDouble()
+        
+        if abs(selfX - positionX) > abs(selfY - positionY) {
+            if positionX > selfX {
+                return .Right
+            } else {
+                return .Left
+            }
+        } else {
+            let incrementalDirection = coordinateSystem.incrementalVerticalDirection
+            
+            if positionY > selfY {
+                return incrementalDirection
+            } else {
+                return incrementalDirection.oppositeDirection()
+            }
+        }
+    }
+    
     /// Conver this position into a CGPoint with equivalent x & y values
     public func toCGPoint() -> CGPoint {
         return CGPoint(x: CGFloat(self.x), y: CGFloat(self.y))
