@@ -40,6 +40,21 @@ public struct Direction {
         public static func lastValue() -> FourWay {
             return .Left
         }
+        
+        /// Whether the direction is Horizontal
+        public var isHorizontal: Bool {
+            switch self {
+            case .Up, .Down:
+                return false
+            case .Right, .Left:
+                return true
+            }
+        }
+        
+        /// Whether the direction is Vertical
+        public var isVertical: Bool {
+            return !self.isHorizontal
+        }
 
         public init?(string: String) {
             switch string {
