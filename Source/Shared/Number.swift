@@ -124,7 +124,7 @@ extension Double: Number {
     }
 }
 
-/// Extensiion that makes CGFloat conform to Number
+/// Extension that makes CGFloat conform to Number
 extension CGFloat: Number {
     public init(_ number: Number) {
         self.init(number.toDouble())
