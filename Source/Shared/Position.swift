@@ -54,6 +54,41 @@ public struct Position_2D<T: Number>: Hashable, StringConvertible, CustomStringC
         }
     }
     
+    /// Return an array of postions that are within the radius of this position, optionally ignoring a set of positions
+    public func positionsWithinRadius(radius: Int, ignoredPositions: Set<Position_2D<T>> = [], includeSelf: Bool = false) -> [Position_2D<T>] {
+        var positions = [Position_2D<T>]()
+        
+        self.forEachPositionWithinRadius(radius, ignoredPositions: ignoredPositions, includeSelf: includeSelf) {
+            positions.append($0)
+        }
+        
+        return positions
+    }
+    
+    /// Run a closure on each position within a certain radius of this position
+    public func forEachPositionWithinRadius(radius: Int, ignoredPositions: Set<Position_2D<T>> = [], includeSelf: Bool = false, closure: Position_2D<T> -> Void) {
+        let selfX = self.x.toInt()
+        let selfY = self.y.toInt()
+        
+        for x in (selfX - radius) ... (selfX + radius) {
+            let yRange = radius - abs(selfX - x)
+            
+            for deltaY in -yRange ... yRange {
+                let position = Position_2D(x: T(x), y: T(selfY + deltaY))
+                
+                if !includeSelf && position == self {
+                    continue
+                }
+                
+                if ignoredPositions.contains(position) {
+                    continue
+                }
+                
+                closure(position)
+            }
+        }
+    }
+    
     /// Return the direction (out of 4 ways) that another position is considered to be in
     public func directionToPosition(position: Position_2D<T>, coordinateSystem: CoordinateSystem = .OriginUpperLeft) -> Direction.FourWay? {
         if self == position {
