@@ -74,6 +74,11 @@ public extension Number {
         return self.toDouble() % number.toDouble() == 0
     }
     
+    /// Convert this number into an Int, potentially loosing precision
+    public func toInt() -> Int {
+        return Int(self.toDouble())
+    }
+    
     /// Return a string representation of the number
     public func toString() -> String {
         return "\(self)"
