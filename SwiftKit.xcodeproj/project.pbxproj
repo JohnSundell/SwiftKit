@@ -13,6 +13,7 @@
 		5219BD331C2891E7004FC71E /* Optional+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */; };
 		521F3C821C18CF520088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
 		521F3C831C18CFB60088124B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521F3C811C18CF520088124B /* Identifiable.swift */; };
+		522DAE091C82105E0080A308 /* Flow+SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522DAE081C82105E0080A308 /* Flow+SpriteKit.swift */; };
 		523E8C3F1C31CAB6005236BB /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C3E1C31CAB6005236BB /* Scale.swift */; };
 		523E8C431C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
 		523E8C441C321EFB005236BB /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523E8C421C321EFB005236BB /* StringConvertible.swift */; };
@@ -21,6 +22,8 @@
 		52465E151C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
 		52465E161C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
 		52465E171C3C450000463E6E /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52465E141C3C450000463E6E /* Pair.swift */; };
+		525173941C8CA95400B841C0 /* UIEdgeInsets+SwiftKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525173931C8CA95400B841C0 /* UIEdgeInsets+SwiftKit.swift */; };
+		525173DC1C8CE09700B841C0 /* Flow+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525173DB1C8CE09700B841C0 /* Flow+UIKit.swift */; };
 		52597C611C374FCB00AE31E4 /* EnumIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */; };
 		526D2DC81C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */; };
 		527665901B2DECF300DBDC11 /* ClosureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276658F1B2DECF300DBDC11 /* ClosureButton.swift */; };
@@ -189,10 +192,13 @@
 		520B4D6E1B84F7B1003C87A4 /* CGSize+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5219BD301C2891E7004FC71E /* Optional+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+SwiftKit.swift"; sourceTree = "<group>"; };
 		521F3C811C18CF520088124B /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		522DAE081C82105E0080A308 /* Flow+SpriteKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Flow+SpriteKit.swift"; path = "Flow/Flow+SpriteKit.swift"; sourceTree = SOURCE_ROOT; };
 		523E8C3E1C31CAB6005236BB /* Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 		523E8C421C321EFB005236BB /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		52436BE11B79672000570956 /* AnyOfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfTests.swift; sourceTree = "<group>"; };
 		52465E141C3C450000463E6E /* Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		525173931C8CA95400B841C0 /* UIEdgeInsets+SwiftKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+SwiftKit.swift"; sourceTree = "<group>"; };
+		525173DB1C8CE09700B841C0 /* Flow+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Flow+UIKit.swift"; path = "Flow/Flow+UIKit.swift"; sourceTree = SOURCE_ROOT; };
 		52597C5E1C374FCB00AE31E4 /* EnumIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumIteratorTests.swift; sourceTree = "<group>"; };
 		526D2DC71C28B0A200A9CDA4 /* Dictionary+SwiftKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+SwiftKitTests.swift"; sourceTree = "<group>"; };
 		5276658F1B2DECF300DBDC11 /* ClosureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureButton.swift; sourceTree = "<group>"; };
@@ -291,11 +297,13 @@
 		5276658E1B2DECEC00DBDC11 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				525173DB1C8CE09700B841C0 /* Flow+UIKit.swift */,
 				52CA89871B6D8BF4003DC193 /* Animate.swift */,
 				5276658F1B2DECF300DBDC11 /* ClosureButton.swift */,
 				5294C6B91C0D1A630035BE4F /* Typealiases.swift */,
 				529DCE3E1B88F5900009A8A4 /* UIImage+SwiftKit.swift */,
 				52E0E7ED1BF7B6E6001E321E /* UIImageView+SwiftKit.swift */,
+				525173931C8CA95400B841C0 /* UIEdgeInsets+SwiftKit.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 				52D6D9081BEE5C15002C0205 /* EnumIterator.swift */,
 				52D6D9091BEE5C15002C0205 /* EnumMap.swift */,
 				52D6D94A1BEE5C91002C0205 /* Flow.swift */,
+				522DAE081C82105E0080A308 /* Flow+SpriteKit.swift */,
 				521F3C811C18CF520088124B /* Identifiable.swift */,
 				52D6D90B1BEE5C15002C0205 /* Identifier.swift */,
 				52E0E7DA1BF78C04001E321E /* KeyedCollection.swift */,
@@ -639,8 +648,10 @@
 				52D6D9331BEE5C15002C0205 /* Identifier.swift in Sources */,
 				528C486E1C14E95F005F679D /* Wrap.swift in Sources */,
 				52BD42F71C27127E006B847B /* CGContext+SwiftKit.swift in Sources */,
+				525173DC1C8CE09700B841C0 /* Flow+UIKit.swift in Sources */,
 				5294C69C1C0CD4C60035BE4F /* Emitter.swift in Sources */,
 				52BD42A51C262E4B006B847B /* CoordinateSystem.swift in Sources */,
+				522DAE091C82105E0080A308 /* Flow+SpriteKit.swift in Sources */,
 				52D6D9351BEE5C15002C0205 /* Number.swift in Sources */,
 				52D6D9291BEE5C15002C0205 /* Direction.swift in Sources */,
 				52D6D9391BEE5C15002C0205 /* RawRepresentable+SwiftKit.swift in Sources */,
@@ -651,6 +662,7 @@
 				52BD42A11C25D85F006B847B /* CGVector+SwiftKit.swift in Sources */,
 				523E8C431C321EFB005236BB /* StringConvertible.swift in Sources */,
 				52D6D9451BEE5C15002C0205 /* Unwrap.swift in Sources */,
+				525173941C8CA95400B841C0 /* UIEdgeInsets+SwiftKit.swift in Sources */,
 				52E0E7EE1BF7B6E6001E321E /* UIImageView+SwiftKit.swift in Sources */,
 				52465E151C3C450000463E6E /* Pair.swift in Sources */,
 				52D6D93B1BEE5C15002C0205 /* Repeat.swift in Sources */,
