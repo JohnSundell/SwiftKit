@@ -1,5 +1,6 @@
 import Foundation
 import CoreGraphics
+import Unbox
 
 /// Structure acting as a namespace for types describing positions
 public struct Position<T: Number> {

@@ -1,5 +1,6 @@
 import XCTest
 import CoreGraphics
+import SwiftKit
 
 class CGPointSwiftKitTests: XCTestCase {
     func testXDistance() {

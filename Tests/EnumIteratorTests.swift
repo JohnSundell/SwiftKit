@@ -1,4 +1,5 @@
 import XCTest
+import SwiftKit
 
 private enum TestEnum: Int {
     case First

@@ -1,4 +1,5 @@
 import XCTest
+import SwiftKit
 
 class PositionTests: XCTestCase {
     func testDirectionToPosition() {

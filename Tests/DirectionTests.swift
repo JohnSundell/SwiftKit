@@ -1,4 +1,6 @@
 import XCTest
+import SwiftKit
+import Unbox
 
 class DirectionTests: XCTestCase {
     func testCount() {

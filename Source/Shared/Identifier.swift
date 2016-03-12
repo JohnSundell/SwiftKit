@@ -1,4 +1,5 @@
 import Foundation
+import Unbox
 
 /// A structure that can be used as a value-type replacement for NSUUID
 public struct Identifier: Hashable {

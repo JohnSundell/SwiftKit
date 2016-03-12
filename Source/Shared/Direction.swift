@@ -1,5 +1,6 @@
 import Foundation
 import CoreGraphics
+import Unbox
 
 /// Protocol defining shared APIs for Direction types
 public protocol DirectionType: RawRepresentable, Hashable, StringConvertible, UnboxableByTransform {

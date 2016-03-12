@@ -1,5 +1,6 @@
 import Foundation
 import CoreGraphics
+import Unbox
 
 /// Unbox a local JSON file, or throw NSError (invalid data) or UnboxError (unboxing failed)
 public func UnboxLocalFileWithName<T: Unboxable>(fileName: String) throws -> T {

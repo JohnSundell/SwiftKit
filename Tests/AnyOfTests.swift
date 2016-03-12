@@ -1,4 +1,5 @@
 import XCTest
+import SwiftKit
 
 class AnyOfTests: XCTestCase {
     func testEquality() {

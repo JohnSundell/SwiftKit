@@ -1,5 +1,7 @@
 import Foundation
 import XCTest
+import SwiftKit
+import Unbox
 
 class IdentifierTests: XCTestCase {
     func testEquality() {
