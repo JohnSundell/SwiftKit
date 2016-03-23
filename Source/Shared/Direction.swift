@@ -230,7 +230,7 @@ public extension DirectionType where RawValue: Number, UnboxRawValueType == Stri
     }
 }
 
-/// Extension for Arrays containing Dictionary values
+/// Extension for Arrays containing Direction values
 public extension Array where Element: DirectionType {
     func toEightWayDirections() -> [Direction.EightWay] {
         var directions: [Direction.EightWay] = []
