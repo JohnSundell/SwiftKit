@@ -2,8 +2,8 @@ import Foundation
 
 /// Protocol that can be used to constrain collections as being indexed by keys
 public protocol KeyedCollection: CollectionType, EmptyInitializable {
-    typealias Key: Hashable
-    typealias Value
+    associatedtype Key: Hashable
+    associatedtype Value
     
     /// Return the value for a key
     func valueForKey(key: Key) -> Value?

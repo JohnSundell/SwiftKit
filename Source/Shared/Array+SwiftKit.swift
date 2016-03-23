@@ -20,7 +20,7 @@ public extension Array {
     public func toDictionary<K>(indexToKey: Int -> K) -> [K : Element] {
         var dictionary = [K : Element]()
         
-        for var index = 0, count = self.count; index < count; index++ {
+        for index in 0..<self.count {
             dictionary[indexToKey(index)] = self[index]
         }
         

@@ -7,7 +7,7 @@ public class ClosureButton: UIButton {
     public init(frame: CGRect, closure: () -> Void) {
         self.closure = closure
         super.init(frame: frame)
-        self.addTarget(self, action: "executeClosure", forControlEvents: .TouchUpInside)
+        self.addTarget(self, action: #selector(executeClosure), forControlEvents: .TouchUpInside)
     }
     
     public convenience init(closure: () -> Void) {
