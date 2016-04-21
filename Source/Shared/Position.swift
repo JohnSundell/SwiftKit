@@ -34,24 +34,32 @@ public struct Position_2D<T: Number>: Hashable, StringConvertible, CustomStringC
     }
     
     /// Return a new position by moving this position by 1 unit in a direction
-    public func positionInDirection(direction: Direction.FourWay, coordinateSystem: CoordinateSystem = .OriginUpperLeft) -> Position_2D<T> {
-        switch direction {
+    public func positionInDirection<D: DirectionType>(direction: D, coordinateSystem: CoordinateSystem = .OriginUpperLeft) -> Position_2D<T> {
+        switch direction.toEightWayDirection() {
         case .Up:
             if coordinateSystem.incrementalVerticalDirection == .Up {
                 return Position_2D(x: self.x, y: (self.y + 1) as T)
             } else {
                 return Position_2D(x: self.x, y: (self.y - 1) as T)
             }
+        case .UpRight:
+            return self.positionInDirection(Direction.FourWay.Up).positionInDirection(Direction.FourWay.Right)
         case .Right:
             return Position_2D(x: (self.x + 1) as T, y: self.y)
+        case .RightDown:
+            return self.positionInDirection(Direction.FourWay.Right).positionInDirection(Direction.FourWay.Down)
         case .Down:
             if coordinateSystem.incrementalVerticalDirection == .Down {
                 return Position_2D(x: self.x, y: (self.y + 1) as T)
             } else {
                 return Position_2D(x: self.x, y: (self.y - 1) as T)
             }
+        case .DownLeft:
+            return self.positionInDirection(Direction.FourWay.Down).positionInDirection(Direction.FourWay.Left)
         case .Left:
             return Position_2D(x: (self.x - 1) as T, y: self.y)
+        case .LeftUp:
+            return self.positionInDirection(Direction.FourWay.Left).positionInDirection(Direction.FourWay.Up)
         }
     }
     
