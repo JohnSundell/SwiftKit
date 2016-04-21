@@ -115,6 +115,20 @@ public struct Direction {
             return .LeftUp
         }
         
+        public static func diagonalDirections() -> [EightWay] {
+            return [
+                .UpRight,
+                .RightDown,
+                .DownLeft,
+                .LeftUp
+            ]
+        }
+        
+        /// Whether the direction is diagonal
+        public var isDiagonal: Bool {
+            return self.toFourWayDirection() == nil
+        }
+        
         public init?(string: String) {
             switch string {
             case EightWay.Up.toString():
