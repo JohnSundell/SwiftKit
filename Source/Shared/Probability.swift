@@ -6,6 +6,11 @@ public struct Probability: FloatLiteralConvertible, Equatable {
     
     private let value: FloatLiteralType
     
+    /// Initialize an instance with a float literal value
+    public init(_ value: Swift.FloatLiteralType) {
+        self.value = value
+    }
+    
     public init(floatLiteral value: FloatLiteralType) {
         self.value = value
     }
